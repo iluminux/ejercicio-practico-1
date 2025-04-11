@@ -1,0 +1,293 @@
+/* Reseteo global y tipografía */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Encabezado y navegación */
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+header nav button {
+    background-color: #17a2b8;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Contenedor principal */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+main h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+main p {
+    font-size: 1.1em;
+    color: #555;
+}
+/* Sección de Bienvenida */
+.bienvenida {
+    text-align: center;
+    padding: 2em;
+}
+
+.bienvenida h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.bienvenida p {
+    font-size: 1.1em;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Sección de Servicios */
+.servicios {
+    text-align: center;
+    padding: 2em;
+}
+
+.servicios h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.servicios-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.servicios-contenido article {
+    text-align: center;
+    max-width: 200px;
+    padding: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.servicios-contenido img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 0.5em;
+}
+
+/* Sección de Testimonios */
+.testimonios {
+    text-align: center;
+    padding: 2em;
+    background-color: #f9f9f9;
+}
+
+.testimonios h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.testimonios blockquote {
+    font-size: 1.1em;
+    color: #555;
+    margin: 1em auto;
+    max-width: 600px;
+}
+
+.testimonios cite {
+    font-style: italic;
+    color: #888;
+}
+
+/* Pie de Página */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: white;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    padding: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #17a2b8;
+}
+
+/* Sección de Equipo Médico */
+.equipo-medico {
+    text-align: center;
+    padding: 2em;
+}
+
+.equipo-medico h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.equipo-medico p {
+    font-size: 1.1em;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 2em;
+}
+
+/* Cuadrícula adaptable para los doctores */
+.equipo-contenido {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5em;
+    justify-items: center;
+}
+
+.equipo-contenido article {
+    text-align: center;
+    max-width: 200px;
+    padding: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+/* Imágenes de perfil uniformes */
+.equipo-contenido img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.5em;
+}
+
+.equipo-contenido h3 {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+.equipo-contenido p {
+    font-size: 0.95em;
+    color: #666;
+}
+
+/* Media Query para pantallas grandes */
+@media (min-width: 768px) {
+    .equipo-contenido {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas grandes */
+    }
+}
+/* Sección de Contacto */
+.contacto {
+    text-align: center;
+    padding: 2em;
+}
+
+.contacto h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.contacto p {
+    font-size: 1.1em;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 2em;
+    line-height: 1.6;
+}
+
+/* Formulario de contacto */
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.formulario-contacto label {
+    text-align: left;
+    color: #333;
+    font-weight: bold;
+}
+
+.formulario-contacto input, .formulario-contacto textarea {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1em;
+}
+
+.formulario-contacto button {
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.formulario-contacto button:hover {
+    background-color: #138496;
+}
+
+/* Sección de Ubicación */
+.ubicacion {
+    text-align: center;
+    padding: 2em;
+    background-color: #f9f9f9;
+}
+
+.ubicacion h2 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+.ubicacion p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 1em;
+}
+
+.mapa img, .mapa iframe {
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+}
