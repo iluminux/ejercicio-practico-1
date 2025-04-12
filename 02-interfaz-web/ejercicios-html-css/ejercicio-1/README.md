@@ -41,6 +41,7 @@ Las imágenes, nombres y referencias utilizados pertenecen a sus respectivos aut
 
 ## 👩‍💻 Autora
 
-Desarrollado por Karina Hidalgo como parte de la Actividad 1 del curso.  
+Desarrollado por Karina Hidalgo como parte del Ejercicio práctico 1 del Módulo 2 del Bootcamp Desarrollo de Aplicaciones Front-End.  
 Inspirado en una visión alternativa del ejercicio original.  
-"Tu salud... por encima de todo. Incluso de ti."
+
+**Advertencia:** No se garantiza la recuperación total del paciente... ni su humanidad.
