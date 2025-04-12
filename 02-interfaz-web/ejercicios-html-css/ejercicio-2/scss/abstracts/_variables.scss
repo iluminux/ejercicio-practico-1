@@ -1,5 +1,14 @@
-$color-principal: #00bcd4;
-$color-secundario: #007c91;
-$color-fondo: #f9f9f9;
+// 🎨 Paleta de colores
+$color-primario: #00bcd4;
+$color-secundario: #00796b;
 $color-texto: #333;
+$color-fondo: #f5f5f5;
+$color-acento: #c2185b;
+
+// 🖋️ Tipografía
 $fuente-principal: 'Roboto', sans-serif;
+
+// 📏 Breakpoints
+$breakpoint-mobile: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;

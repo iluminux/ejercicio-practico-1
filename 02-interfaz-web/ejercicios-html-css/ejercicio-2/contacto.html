@@ -1,85 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Hospital Homeostasis</title>
-    
-    <!-- Favicon -->
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - Hospital Raccoon City</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="img/logo/favicon.ico" type="image/x-icon" />
 </head>
-<body><body class="contacto">
 
-    <!-- Encabezado -->
-    <header>
-        <nav>
-            <img src="img/Logo.png" alt="Logotipo Hospital Homeostasis" width="100">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="equipo.html">Equipo Médico</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-            <button>Reservar Hora</button>
-        </nav>
-    </header>
+<body>
+  <!-- ENCABEZADO -->
+  <header>
+    <div class="logo">
+      <img src="img/logo/logo-raccoon-general-hospital.svg" alt="Logo Raccoon Hospital" />
+      <h1>Hospital Raccoon City</h1>
+      <p class="slogan">Tu salud... por encima de todo. Incluso de ti.</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="equipo.html">Equipo</a></li>
+        <li><a href="instalaciones.html">Instalaciones</a></li>
+        <li><a href="mapas.html">Mapas</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Contenido principal -->
-    <main>
-        <section class="contacto">
-            <h1>Contáctanos</h1>
-            <p>Para consultas o información adicional, no dudes en contactarnos. Nuestro equipo está aquí para ayudarte.</p>
+  <!-- SECCIÓN DE CONTACTO -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Dirección: Av. Principal 666, Raccoon City</p>
+    <p>Teléfono: +01 555-UMBRELLA</p>
+    <p>Email: contacto@raccoonhospital.com</p>
+    <p>Horarios de atención: 24/7 (literalmente)</p>
 
-            <!-- Formulario de contacto -->
-            <form action="#" method="post" class="formulario-contacto">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
+    <h3>Formulario de contacto (ficticio)</h3>
+    <form action="#" method="post">
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" id="nombre" name="nombre" required><br><br>
 
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
+      <label for="email">Correo electrónico:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
 
-                <label for="asunto">Asunto:</label>
-                <input type="text" id="asunto" name="asunto">
+      <label for="mensaje">Mensaje:</label><br>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
 
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
 
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
+  <!-- AVISO LEGAL -->
+  <section id="aviso-legal" class="disclaimer">
+    <h3>Aviso Legal</h3>
+    <p>Este sitio web ha sido desarrollado con fines académicos como parte de una actividad escolar. El contenido está inspirado en la saga <strong>Resident Evil</strong> de Capcom.</p>
+    <p>Las imágenes, nombres y referencias pertenecen a sus respectivos autores. No se pretende infringir ningún derecho de autor ni lucrar con este material.</p>
+  </section>
 
-        <!-- Sección de Ubicación o Mapa -->
-        <section class="ubicacion">
-            <h2>Nuestra Ubicación</h2>
-            <p>Encuéntranos en la siguiente dirección:</p>
-            <div class="mapa">
-                <!-- Puedes reemplazar esto con un iframe de Google Maps si lo deseas -->
-                <img src="img/mapa.png" alt="Mapa de ubicación del hospital" width="100%">
-                <!-- Ejemplo de un iframe para Google Maps -->
-                <!--
-                <iframe src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_LINK" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                -->
-            </div>
-        </section>
-    </main>
-
-    <!-- Pie de página -->
-    <footer>
-        <p>Hospital Homeostasis © 2024</p>
-        <nav>
-            <ul>
-                <li><a href="#">Política de Privacidad</a></li>
-                <li><a href="#">Términos de Servicio</a></li>
-            </ul>
-        </nav>
-        <div>
-            <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
-        </div>
-    </footer>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Raccoon General Hospital · Todos los derechos reservados</p>
+    <p>Una división de Umbrella Corporation®</p>
+  </footer>
 </body>
 </html>

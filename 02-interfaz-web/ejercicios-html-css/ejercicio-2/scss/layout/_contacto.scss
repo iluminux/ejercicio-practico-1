@@ -1,36 +1,44 @@
 body.contacto {
-    background-color: lighten($color-principal, 35%);
-  
-    main {
-      padding: 2rem;
-    }
-  
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      max-width: 400px;
-      margin-top: 2rem;
-    }
-  
+  padding: 2rem;
+
+  form {
+    max-width: 500px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
     input,
-    textarea,
-    button {
-      padding: 0.75rem;
-      font-family: $fuente-principal;
+    textarea {
+      padding: 0.8rem;
       border: 1px solid #ccc;
-      border-radius: 5px;
+      border-radius: 6px;
+      font-family: inherit;
     }
-  
+
     button {
-      background-color: $color-principal;
+      background-color: variables.$color-primario;
       color: white;
+      padding: 0.75rem;
       border: none;
+      border-radius: 6px;
       cursor: pointer;
-  
+      font-weight: bold;
+
       &:hover {
-        background-color: darken($color-principal, 10%);
+        background-color: darken(variables.$color-primario, 10%);
       }
     }
   }
-  
+
+  #mapa-hospital {
+    margin-top: 3rem;
+    text-align: center;
+
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+  }
+}

@@ -1,53 +1,86 @@
-# 🏥 Hospital Homeostasis - Ejercicio Front-End
+# Hospital Raccoon City
 
-Este proyecto es parte del Bootcamp de Desarrollo de Aplicaciones Front-End.  
-Corresponde a la **Unidad 2: Desarrollo de la Interfaz de Usuario Web**.
+**Tu salud... por encima de todo. Incluso de ti.**
 
----
-
-## 📁 Estructura del proyecto
-ejercicio-2/ ├── index.html ├── equipo.html ├── contacto.html ├── img/ # Imágenes del sitio ├── css/ # CSS compilado automáticamente │ └── main.css ├── scss/ # Código fuente en SCSS │ ├── main.scss │ ├── abstracts/ │ │ ├── _variables.scss │ │ └── _mixins.scss │ ├── base/ │ │ ├── _reset.scss │ │ └── _typography.scss │ ├── components/ │ │ ├── _header.scss │ │ └── _footer.scss │ └── layout/ │ ├── _home.scss │ ├── _equipo.scss │ └── _contacto.scss └── .vscode/ └── settings.json
+Este proyecto es una simulación web creada con fines educativos, ambientada en el universo de *Resident Evil*. Representa el sitio ficticio del "Hospital Raccoon City", inspirado en la estética y narrativa de la saga.
 
 ---
 
-## ⚙️ Tecnologías utilizadas
+## 📅 Proyecto: Ejercicio 2 - Interfaz Web (HTML + SCSS)
 
-- HTML5 + CSS3
-- SCSS (estructura modular con `@use`)
-- Live Sass Compiler (VS Code Extension)
-- Google Fonts (`Roboto`)
-- Live Server (para visualizar en tiempo real)
+> Reestructuración completa del HTML y CSS original utilizando buenas prácticas con SASS/SCSS.
 
 ---
 
-## 💻 ¿Cómo trabajar el proyecto?
+## 🌐 Vistas del Sitio
 
-1. Abre la carpeta `ejercicio-2` en Visual Studio Code.
-2. Asegúrate de tener estas extensiones:
-   - Live Server ✅
-   - Live Sass Compiler ✅
-3. Activa el compilador con **"Watch Sass"** abajo a la derecha.
-4. Modifica archivos `.scss` y guarda: `main.css` se generará automáticamente en `css/`.
-5. Abre el proyecto con Live Server para ver los cambios.
+### Inicio
+![Inicio](img/screenshots/screenshot-inicio.jpeg)
 
----
+### Equipo Médico
+![Equipo](img/screenshots/screenshot-equipo.jpeg)
 
-## ✅ Estilos organizados
+### Instalaciones
+![Instalaciones](img/screenshots/screenshot-instalaciones.jpeg)
 
-- Variables globales (`_variables.scss`)
-- Reset CSS (`_reset.scss`)
-- Tipografía general (`_typography.scss`)
-- Componentes (`_header.scss`, `_footer.scss`)
-- Estilos por página:
-  - `index.html` → `body.home`
-  - `equipo.html` → `body.equipo`
-  - `contacto.html` → `body.contacto`
+### Mapas
+![Mapas](img/screenshots/screenshot-mapas.jpeg)
+
+### Contacto
+![Contacto](img/screenshots/screenshot-contacto.jpeg)
 
 ---
 
-## 🧠 Autor
+## 💡 Tecnologías Utilizadas
 
-👩‍💻 Proyecto desarrollado por Karina Hidalgo  
-📅 Bootcamp Front-End 2024  
-🚀 Módulo 2 - Desarrollo de la interfaz de usuario web
+- HTML5 + SCSS
+- Estructura modular con partials SCSS
+- Flexbox y grid para maquetación
+- Variables, mixins y nesting en SCSS
+- Tipografía: Google Fonts
+- Optimización de imágenes (.webp)
+
+---
+
+## 🔧 Estructura del Proyecto
+
+02-interfaz-web/ ├── ejercicio-2/ ├── css/ │ └── styles.css ├── scss/ │ ├── abstracts/ │ ├── base/ │ ├── components/ │ ├── layout/ │ └── main.scss ├── img/ │ └── screenshots/ ├── index.html ├── equipo.html ├── contacto.html ├── instalaciones.html └── mapas.html
+
+---
+
+## 🎨 Temática y Estilo
+
+- Paleta oscura (modo nocturno)
+- Rojo Umbrella como acento
+- Estilo clínico pero inquietante 🧐
+
+---
+
+## 🔍 Visualización Local
+
+1. Clona o descarga el repositorio
+2. Asegúrate de tener instalada la extensión **Live Sass Compiler** en VS Code
+3. Activa el modo `Watch Sass`
+4. Usa **Live Server** para visualizar `index.html`
+
+---
+
+## ⚠️ Aviso Legal
+
+Este sitio web ha sido desarrollado con fines académicos como parte de una actividad escolar. El contenido está inspirado en la saga **Resident Evil** de Capcom.
+
+Las imágenes, nombres y referencias pertenecen a sus respectivos autores. No se pretende infringir ningún derecho de autor ni lucrar con este material.
+
+---
+
+## © 2025 Raccoon General Hospital
+**Una división de Umbrella Corporation®**
+
+
+---
+
+## 👩‍💻 Autora
+Desarrollado por Karina Hidalgo como parte del Ejercicio práctico 2 del Módulo 2 del Bootcamp Desarrollo de Aplicaciones Front-End.
+
+Advertencia: No se garantiza la recuperación total del paciente... ni su humanidad.
 

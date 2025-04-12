@@ -1,19 +1,25 @@
 body.equipo {
-    main {
-      padding: 2rem;
-      background-color: lighten($color-secundario, 40%);
-    }
-  
-    h1 {
-      color: $color-secundario;
-      font-weight: bold;
-      font-size: 2rem;
-    }
-  
-    p {
-      font-style: italic;
-      color: $color-texto;
+  padding: 2rem;
+
+  .equipo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+
+    .card {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+
+      img {
+        max-width: 100%;
+        border-radius: 6px;
+        margin-bottom: 1rem;
+      }
     }
   }
-  
-  
+}
+ 

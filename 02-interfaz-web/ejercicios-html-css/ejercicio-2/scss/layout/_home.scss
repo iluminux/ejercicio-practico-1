@@ -1,19 +1,29 @@
 body.home {
-    main {
-      padding: 2rem;
-      background-color: $color-fondo;
+  .hero {
+    position: relative;
+    text-align: center;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
     }
-  
-    h1 {
-      color: $color-principal;
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-  
-    p {
-      font-size: 1rem;
-      color: $color-texto;
+
+    .overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 1.5rem;
+      border-radius: 8px;
     }
   }
-  
-  
+
+  .disclaimer {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #555;
+  }
+}
