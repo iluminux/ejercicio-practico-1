@@ -1,45 +1,46 @@
-# 🏥 Hospital Homeostasis
+# 🏥 Hospital Raccoon City
 
-**Ejercicio Práctico 1 - Módulo 2: Construcción de Interfaces Web**
-
-Este proyecto consiste en el diseño e implementación de un sitio web informativo para el *Hospital Homeostasis*, aplicando HTML5, CSS3 y buenas prácticas de estructura semántica y accesibilidad.
-
----
-
-## 📌 Estructura del sitio
-
-El sitio cuenta con tres vistas principales:
-
-- `index.html`: Página de inicio con mensaje de bienvenida, descripción de servicios, navegación y pie de página.
-- `equipo.html`: Página del equipo médico con perfiles de doctores.
-- `contacto.html`: Página de contacto con formulario y mapa.
+Sitio web ficticio creado como parte de una actividad académica, inspirado en el universo de **Resident Evil** (Capcom®).  
+Desarrollado con fines educativos, utilizando HTML y CSS para aplicar conceptos de diseño web, estructura semántica, estilo visual y organización de assets.
 
 ---
 
-## 🧠 Habilidades y contenidos aplicados
+## 📌 Contenido del sitio
 
-- HTML semántico
-- Estructura modular con múltiples vistas
-- CSS personalizado (modelo de cajas, tipografías, colores, botones)
-- Organización del código (carpetas `css/`, `img/`)
-- Uso de etiquetas accesibles y atributos `alt`
-- Responsividad básica (media queries en proceso)
+Este sitio presenta una propuesta temática de hospital con las siguientes secciones:
 
----
-
-## 📷 Captura de pantalla
-
-![Vista principal del sitio](img/Logo.png)
+- **Inicio:** presentación del hospital con imagen destacada y eslogan institucional.
+- **Equipo:** muestra del personal médico y científico, con estética inspirada en Umbrella Corporation.
+- **Instalaciones:** galería de espacios clave dentro del hospital.
+- **Mapas:** planos internos con distribución por pisos.
+- **Contacto:** información ficticia y formulario de contacto.
 
 ---
 
-## 🚀 Cómo ver el proyecto
+## 🧪 Sobre el desarrollo
 
-Puedes clonar este repositorio y abrir `index.html` en tu navegador, o ejecutarlo con **Live Server** desde Visual Studio Code.
+Este proyecto comenzó originalmente como una propuesta más tradicional llamada **Clínica Homeostasis**, pero fue reformulado creativamente para aprovechar el universo narrativo de **Resident Evil**, con una ambientación más oscura, corporativa y experimental.
+
+Todo el desarrollo fue hecho desde cero utilizando:
+
+- HTML5 semántico
+- CSS3 personalizado (sin frameworks)
+- Organización modular de archivos (HTML + assets por categoría)
+- Diseño responsivo básico
 
 ---
 
-## 📁 Créditos
+## ⚠️ Aviso legal
 
-Diseñado por **Lumina UX** como parte del Bootcamp de Desarrollo de Aplicaciones Front-End.  
-[Ver repositorio del Bootcamp completo](https://github.com/iluminux/Bootcamp-FrontEnd)
+Este sitio no tiene fines comerciales ni lucrativos.  
+Las imágenes, nombres y referencias utilizados pertenecen a sus respectivos autores y se incluyen únicamente con fines educativos.
+
+> Resident Evil™, Umbrella Corporation™, y demás elementos relacionados son propiedad de Capcom®.
+
+---
+
+## 👩‍💻 Autora
+
+Desarrollado por Karina Hidalgo como parte de la Actividad 1 del curso.  
+Inspirado en una visión alternativa del ejercicio original.  
+"Tu salud... por encima de todo. Incluso de ti."

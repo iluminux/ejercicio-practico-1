@@ -1,75 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equipo Médico - Hospital Homeostasis</title>
-    
-    <!-- Favicon -->
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Equipo Médico - Hospital Raccoon City</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="img/logo/favicon.ico" type="image/x-icon" />
 </head>
+
 <body>
-    <header>
-        <nav>
-            <img src="img/Logo.png" alt="Logotipo Hospital Homeostasis" width="100">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="equipo.html">Equipo Médico</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-            <button>Reservar Hora</button>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h1>Conoce a Nuestro Equipo Médico</h1>
-            <p>En el Hospital Homeostasis, nuestro equipo de médicos especialistas está comprometido con la excelencia y el bienestar de nuestros pacientes.</p>
-        </section>
-
-        <section>
-            <div class="equipo-medico">
-                <article>
-                    <img src="img/Dr. Gregory House.png" alt="Dr. Gregory House">
-                    <h3>Dr. Gregory House</h3>
-                    <p>Especialista en diagnóstico</p>
-                </article>
-                <article>
-                    <img src="img/Dr. James Wilson.png" alt="Dr. James Wilson">
-                    <h3>Dr. James Wilson</h3>
-                    <p>Oncología</p>
-                </article>
-                <article>
-                    <img src="img/Dra. Lisa Cuddy.png" alt="Dra. Lisa Cuddy">
-                    <h3>Dra. Lisa Cuddy</h3>
-                    <p>Administración Hospitalaria</p>
-                </article>
-                <article>
-                    <img src="img/Dr. Eric Foreman.png" alt="Dr. Eric Foreman">
-                    <h3>Dr. Eric Foreman</h3>
-                    <p>Neurología</p>
-                </article>
-            </div>
-        </section>
-    </main>
-
-   <!-- Pie de página -->
-   <footer>
-    <p>Hospital Homeostasis © 2024</p>
-    <nav>
-        <ul>
-            <li><a href="#">Política de Privacidad</a></li>
-            <li><a href="#">Términos de Servicio</a></li>
-        </ul>
-    </nav>
-    <div>
-        <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+  <!-- ENCABEZADO -->
+  <header>
+    <div class="logo">
+      <img src="img/logo/logo-raccoon-general-hospital.svg" alt="Logo Raccoon Hospital" />
+      <h1>Hospital Raccoon City</h1>
+      <p class="slogan">Tu salud... por encima de todo. Incluso de ti.</p>
     </div>
-</footer>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="equipo.html">Equipo</a></li>
+        <li><a href="instalaciones.html">Instalaciones</a></li>
+        <li><a href="mapas.html">Mapas</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- SECCIÓN EQUIPO -->
+  <section id="equipo">
+    <h2>Nuestro Equipo</h2>
+    <p class="intro">
+      En el Hospital Raccoon City contamos con profesionales de excelencia. Nuestro equipo combina conocimientos médicos tradicionales con avances en bioingeniería y proyectos especiales.
+    </p>
+
+    <div class="equipo-grid">
+      <div class="card">
+        <img src="img/equipo/equipo-medico-principal.webp" alt="Equipo médico en quirófano" />
+        <h3>Unidad de Urgencias</h3>
+        <p>Especialistas entrenados en situaciones críticas... incluso en condiciones extremas.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/equipo/equipo-cientifico-umbrella.jpg" alt="Equipo científico Umbrella" />
+        <h3>Departamento de Investigación</h3>
+        <p>Científicos líderes en genética, neurobiología y contención viral.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/equipo/umbrella-analisis-cerebral.webp" alt="Análisis cerebral en laboratorio Umbrella" />
+        <h3>Unidad Neurológica</h3>
+        <p>Estudios avanzados del comportamiento post-traumático y reactivación neural.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/equipo/umbrella-cientificos-con-alice.jpg" alt="Científicos de Umbrella examinando paciente" />
+        <h3>Contención Biológica</h3>
+        <p>Área de evaluación experimental. Pacientes en constante observación.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/equipo/umbrella-conteniendo-paciente.jpg" alt="Doctores conteniendo a paciente en crisis" />
+        <h3>Control de Crisis</h3>
+        <p>Unidad especializada en incidentes clínicos… y no tan clínicos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AVISO LEGAL -->
+  <section id="aviso-legal" class="disclaimer">
+    <h3>Aviso Legal</h3>
+    <p>Este sitio web ha sido desarrollado con fines académicos como parte de una actividad escolar. El contenido está inspirado en la saga <strong>Resident Evil</strong> de Capcom.</p>
+    <p>Las imágenes, nombres y referencias pertenecen a sus respectivos autores. No se pretende infringir ningún derecho de autor ni lucrar con este material.</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Raccoon General Hospital · Todos los derechos reservados</p>
+    <p>Una división de Umbrella Corporation®</p>
+  </footer>
 </body>
 </html>
+  

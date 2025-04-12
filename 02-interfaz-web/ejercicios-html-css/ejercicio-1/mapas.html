@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contacto - Hospital Raccoon City</title>
+  <title>Mapas - Hospital Raccoon City</title>
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" href="img/logo/favicon.ico" type="image/x-icon" />
 </head>
@@ -27,33 +27,30 @@
     </nav>
   </header>
 
-  <!-- SECCIÓN DE CONTACTO -->
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>Dirección: Av. Principal 666, Raccoon City</p>
-    <p>Teléfono: +01 555-UMBRELLA</p>
-    <p>Email: contacto@raccoonhospital.com</p>
-    <p>Horarios de atención: 24/7 (literalmente)</p>
+  <!-- SECCIÓN MAPAS -->
+  <section id="mapas">
+    <h2>Mapas del hospital</h2>
+    <p class="intro">
+      Conocé la distribución general del Hospital Raccoon City. Algunos accesos se encuentran clausurados por motivos de seguridad institucional.
+    </p>
 
-    <h3>Formulario de contacto (ficticio)</h3>
-    <form action="#" method="post">
-      <label for="nombre">Nombre:</label><br>
-      <input type="text" id="nombre" name="nombre" required><br><br>
-
-      <label for="email">Correo electrónico:</label><br>
-      <input type="email" id="email" name="email" required><br><br>
-
-      <label for="mensaje">Mensaje:</label><br>
-      <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
-
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
-
-  <!-- MAPA VISUAL -->
-  <section id="mapa-hospital">
-    <h3>Mapa interno de referencia</h3>
-    <img src="img/mapas/planta-baja.webp" alt="Mapa interno del hospital" />
+    <div class="mapas-grid">
+      <div class="card">
+        <img src="img/mapas/planta-baja.webp" alt="Mapa planta baja" />
+        <h3>Planta Baja</h3>
+        <p>Área de recepción, quirófano, sala de decisiones.</p>
+      </div>
+      <div class="card">
+        <img src="img/mapas/4to-piso.webp" alt="Mapa cuarto piso" />
+        <h3>4to Piso</h3>
+        <p>Habitaciones, cuarto de datos y pasillo de control.</p>
+      </div>
+      <div class="card">
+        <img src="img/mapas/subsuelo-3.webp" alt="Mapa subsuelo 3" />
+        <h3>3er Subsuelo</h3>
+        <p>Laboratorio experimental, trastero y pasillos restringidos.</p>
+      </div>
+    </div>
   </section>
 
   <!-- AVISO LEGAL -->
