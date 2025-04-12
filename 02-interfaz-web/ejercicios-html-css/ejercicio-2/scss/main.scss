@@ -1,0 +1,24 @@
+// -------------------------
+// 💡 Abstracts (variables y herramientas globales)
+// -------------------------
+@use 'abstracts/variables';
+@use 'abstracts/mixins';
+
+// -------------------------
+// 🎯 Base (reseteo y estilos globales)
+// -------------------------
+@use 'base/reset';
+@use 'base/typography';
+
+// -------------------------
+// 🧩 Components (bloques reutilizables)
+// -------------------------
+@use 'components/header';
+@use 'components/footer';
+
+// -------------------------
+// 📄 Layout por página
+// -------------------------
+@use 'layout/home';
+@use 'layout/equipo';
+@use 'layout/contacto';

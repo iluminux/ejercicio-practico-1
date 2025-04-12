@@ -1,0 +1,28 @@
+// -------------------------
+// 🎨 Tipografías base
+// -------------------------
+
+body {
+    font-family: variables.$fuente-principal;
+    font-size: 16px;
+    line-height: 1.5;
+    color: variables.$color-texto;
+  }
+  
+  // Estilos generales para títulos
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: variables.$color-principal;
+  }
+  
+  // Enlaces
+  a {
+    color: variables.$color-secundario;
+    text-decoration: none;
+  
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  

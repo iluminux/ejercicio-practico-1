@@ -1,0 +1,38 @@
+// -------------------------
+// 🔄 Reset básico de estilos
+// -------------------------
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  scroll-behavior: smooth;
+  background-color: variables.$color-fondo;
+  color: variables.$color-texto;
+  font-family: variables.$fuente-principal;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
