@@ -32,16 +32,18 @@ Todo el desarrollo fue hecho desde cero utilizando:
 
 ## ⚠️ Aviso legal
 
-Este sitio no tiene fines comerciales ni lucrativos.  
-Las imágenes, nombres y referencias utilizados pertenecen a sus respectivos autores y se incluyen únicamente con fines educativos.
+Este sitio web ha sido desarrollado con fines académicos como parte de una actividad escolar. El contenido está inspirado en la saga **Resident Evil** de Capcom. Las imágenes, nombres y referencias pertenecen a sus respectivos autores.
 
-> Resident Evil™, Umbrella Corporation™, y demás elementos relacionados son propiedad de Capcom®.
+## © 2025 Raccoon General Hospital
+**Una división de Umbrella Corporation®**
+
+---
+
+🟢 Entregado como la 1ra parte del Ejercicio práctico del  **Módulo 2 - Desarrollo de la Interfaz de Usuario Web** del Bootcamp Desarrollo de Aplicaciones Front-End.
 
 ---
 
 ## 👩‍💻 Autora
+Desarrollado por Karina Hidalgo.
 
-Desarrollado por Karina Hidalgo como parte del Ejercicio práctico 1 del Módulo 2 del Bootcamp Desarrollo de Aplicaciones Front-End.  
-Inspirado en una visión alternativa del ejercicio original.  
-
-**Advertencia:** No se garantiza la recuperación total del paciente... ni su humanidad.
+🚨 Advertencia: No se garantiza la recuperación total del paciente... ni su humanidad.
