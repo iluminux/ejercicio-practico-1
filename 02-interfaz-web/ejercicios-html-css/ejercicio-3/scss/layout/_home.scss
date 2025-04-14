@@ -1,0 +1,82 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+// Cinta de bienvenida
+.home__bienvenida {
+  background-color: $color-fondo-claro;
+  padding: $espaciado-xs 0;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+  .home__titulo {
+    font-size: 1rem;
+    font-weight: 700; // ✅ Negrita aplicada aquí
+    color: $color-acento;
+    margin: 0;
+  }
+}
+
+// Imagen destacada con overlay
+.home__hero {
+  position: relative;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    display: block;
+    border-radius: 0.5rem;
+  }
+
+  .home__overlay-text {
+    position: absolute;
+    bottom: $espaciado-sm;
+    left: $espaciado-sm;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: $color-texto-inverso;
+    padding: $espaciado-sm $espaciado-md;
+    border-radius: 1rem;
+    max-width: 90%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+      color: $color-texto-inverso;
+    }
+
+    p {
+      font-size: 0.85rem;
+      margin: 0;
+      color: $color-texto-inverso;
+      line-height: 1.3;
+    }
+  }
+}
+
+// Aviso Legal
+.home__aviso-legal {
+  background-color: $color-fondo-claro;
+  text-align: left;
+  color: $color-texto;
+  font-size: 0.8rem;
+  padding: $espaciado-md $espaciado-md;
+  width: 100%;
+  box-sizing: border-box;
+
+  strong {
+    display: inline-block;
+    color: $color-acento;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: $espaciado-xs;
+  }
+
+  p {
+    margin-top: $espaciado-xs;
+    line-height: 1.4;
+    max-width: 100%;
+    font-size: 0.95rem;
+  }
+}

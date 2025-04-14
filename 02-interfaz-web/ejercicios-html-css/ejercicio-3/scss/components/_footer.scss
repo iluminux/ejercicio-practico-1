@@ -1,0 +1,24 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.footer {
+  background-color: $color-fondo-oscuro;
+  color: $color-texto-inverso;
+  padding: $espaciado-sm 0;
+
+  .footer__contenido {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; // para evitar desbordes en pantallas pequeñas
+    gap: 1rem;
+    font-size: 0.85rem;
+    padding: 0 $espaciado-sm;
+    text-align: center;
+  }
+
+  .footer__texto {
+    margin: 0;
+    color: $color-texto-inverso;
+    white-space: nowrap; // evita que se rompa en dos líneas
+  }
+}

@@ -1,0 +1,103 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.header {
+  background-color: $color-fondo-oscuro;
+  color: $color-texto-inverso;
+  text-align: center;
+  padding: $espaciado-sm 0;
+
+  &__logo {
+    width: 60px;
+    margin: 0 auto $espaciado-xs;
+    display: block;
+  }
+
+  &__titulo {
+    font-family: $font-heading;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: $color-texto-inverso;
+  }
+
+  &__subtitulo {
+    font-size: 0.9rem;
+    margin-bottom: $espaciado-sm;
+    color: $color-texto-inverso;
+  }
+
+  .menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    color: $color-texto-inverso;
+    border: none;
+    cursor: pointer;
+    margin: $espaciado-sm auto;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: $espaciado-sm;
+    transition: max-height 0.3s ease-in-out;
+
+    a {
+      color: $color-texto-inverso;
+      text-decoration: none;
+      position: relative;
+      font-size: 0.95rem;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -0.2rem;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $color-acento;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+
+      &:hover {
+        color: $color-acento;
+      }
+    }
+
+    &.mobile-hidden {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    &.active {
+      display: flex;
+    }
+  }
+
+  @media (max-width: $breakpoint-md) {
+    .menu-toggle {
+      display: block;
+    }
+
+    .nav {
+      display: none;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      &.active {
+        display: flex;
+      }
+    }
+  }
+}

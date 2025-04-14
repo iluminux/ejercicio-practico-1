@@ -1,0 +1,30 @@
+@use 'variables' as v;
+
+// 🟨 MIXINS GENERALES
+
+@mixin centrado-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin responsive-text($min, $max) {
+  font-size: clamp($min, 2vw, $max);
+}
+
+@mixin contenedor {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: v.$espaciado-sm;
+}
+
+@mixin transition($prop: all, $duracion: 0.3s, $modo: ease-in-out) {
+  transition: $prop $duracion $modo;
+}
+
+@mixin grid-auto($cols, $gap) {
+  display: grid;
+  grid-template-columns: repeat($cols, 1fr);
+  gap: $gap;
+}

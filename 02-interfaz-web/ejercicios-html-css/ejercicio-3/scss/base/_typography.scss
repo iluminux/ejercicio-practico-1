@@ -1,0 +1,16 @@
+@use '../abstracts/variables' as *;
+
+// 🖋 TIPOGRAFÍA PERSONALIZADA
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-heading;
+  font-weight: bold;
+  color: $color-texto;
+  line-height: 1.2;
+}
+
+p {
+  margin-bottom: 1em;
+  font-family: $font-base;
+  font-size: $font-size-base;
+  color: $color-texto;
+}

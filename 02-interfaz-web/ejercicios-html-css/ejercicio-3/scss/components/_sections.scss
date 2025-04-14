@@ -1,0 +1,25 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.section {
+  padding: $espaciado-md 0;
+
+  &--clara {
+    background-color: $color-fondo-claro;
+  }
+
+  &--oscura {
+    background-color: $color-fondo-oscuro;
+    color: $color-texto-inverso;
+  }
+
+  &__titulo {
+    font-size: 2rem;
+    margin-bottom: $espaciado-sm;
+    text-align: center;
+  }
+
+  &__contenido {
+    @include contenedor;
+  }
+}

@@ -1,0 +1,50 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+
+.card-container {
+  gap: $espaciado-md;
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: $espaciado-md;
+  padding: $espaciado-sm;
+
+  &__card {
+    background-color: $color-fondo-claro;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    @include transition();
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    &__contenido {
+      padding: $espaciado-sm;
+
+      h3 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+        color: $color-principal;
+      }
+
+      p {
+        font-size: 0.95rem;
+        color: $color-texto;
+      }
+    }
+  }
+}
+  

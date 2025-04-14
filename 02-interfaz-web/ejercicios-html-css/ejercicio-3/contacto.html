@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - Hospital Raccoon City</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="icon" href="img/logo/favicon.ico" type="image/x-icon" />
+</head>
+
+<body class="contacto">
+  <header class="header">
+    <img src="img/logo/logo-raccoon-general-hospital.svg" alt="Hospital Raccoon City" class="logo">
+    <h1 class="titulo">Hospital Raccoon City</h1>
+    <p class="subtitulo">Tu salud... por encima de todo. Incluso de ti.</p>
+  
+    <button class="menu-toggle">☰</button>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="equipo.html">Equipo</a>
+      <a href="instalaciones.html">Instalaciones</a>
+      <a href="mapa.html">Mapas</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>   
+
+  <main>
+    <section class="contacto__datos">
+      <h2 class="contacto__titulo">Contacto</h2>
+      <p><strong>Dirección:</strong> Av. Principal 666, Raccoon City</p>
+      <p><strong>Teléfono:</strong> +01 555-UMBRELLA</p>
+      <p><strong>Email:</strong> contacto@raccoonhospital.com</p>
+      <p><strong>Horarios de atención:</strong> 24/7 (literalmente)</p>
+
+      <h3>Formulario de contacto (ficticio)</h3>
+      <form class="contacto__formulario" action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button class="contacto__boton" type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <section class="contacto__mapa">
+      <h3>Mapa interno de referencia</h3>
+      <img src="img/mapas/planta-baja.webp" alt="Mapa interno del hospital" />
+    </section>
+
+    <section class="contacto__aviso disclaimer">
+      <h3>Aviso Legal</h3>
+      <p>
+        Este sitio web ha sido desarrollado con fines académicos como parte de una actividad escolar. 
+        El contenido está inspirado en la saga <strong>Resident Evil</strong> de Capcom.
+      </p>
+      <p>
+        Las imágenes, nombres y referencias pertenecen a sus respectivos autores. 
+        No se pretende infringir ningún derecho de autor ni lucrar con este material.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__contenido container text-center">
+      <p class="footer__texto">© 2025 Raccoon General Hospital - Todos los derechos reservados</p>
+      <p class="footer__texto">Una división de Umbrella Corporation®</p>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
