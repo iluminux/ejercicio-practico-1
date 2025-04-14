@@ -1,47 +1,111 @@
-Resumen del Módulo 1: Orientación al Perfil y Metodología del Curso
-Introducción
-El Módulo 1 sienta las bases del Bootcamp de Desarrollo Front-End, presentando a los participantes la realidad de la industria de Tecnologías de la Información (TI) y del rol de Desarrollador Front-End. En este módulo se revisan las principales características de la industria TI, la diversidad de perfiles profesionales existentes (enfatizando el perfil Front-End), y las competencias técnicas y habilidades personales más valoradas. Además, se clarifica qué significa ser un desarrollador front-end hoy en día, cuáles son las expectativas laborales asociadas, y cómo se proyecta el crecimiento en este campo. Por último, se explica la metodología de enseñanza del bootcamp – basada en aprendizaje activo y proyectos colaborativos – y se destaca la importancia de construir un portafolio profesional a lo largo del curso para evidenciar las habilidades adquiridas.
-Características de la Industria TI
-La industria TI se caracteriza por ser dinámica y en constante evolución. Entre sus rasgos más destacados se encuentran:
-Innovación continua: Surgen continuamente nuevas tecnologías, lenguajes y frameworks, lo que obliga a los profesionales a actualizarse de forma permanente. (Ejemplo: la rápida adopción de frameworks JavaScript modernos como React, Angular o Vue.js reemplazando herramientas de hace una década.)
-Globalización del trabajo: Es una industria global donde el trabajo puede realizarse desde cualquier lugar. Equipos distribuidos internacionalmente son comunes, por lo que la colaboración a distancia y la adaptación a contextos multiculturales resultan fundamentales.
-Alta demanda de talento: Los desarrolladores de software, en especial en áreas como desarrollo web, inteligencia artificial o ciberseguridad, están entre los perfiles más buscados mundialmente. Existe un déficit de profesionales calificados, lo que se traduce en numerosas oportunidades laborales para quienes adquieren estas habilidades.
-Agilidad y flexibilidad: La adopción de metodologías ágiles (como Scrum y Kanban) ha revolucionado la forma de gestionar proyectos de software, reemplazando enfoques tradicionales (ej. Waterfall). Esto permite a las empresas responder rápidamente a los cambios del mercado y las necesidades del cliente, entregando valor de forma iterativa.
-Perfiles Profesionales en TI
-La industria TI ofrece una amplia diversidad de perfiles profesionales, según áreas de especialización. Algunos de los más relevantes son:
-Desarrollador Front-End: Enfocado en la creación de interfaces de usuario atractivas y usables. Utiliza tecnologías web como HTML, CSS y JavaScript para construir la parte visual e interactiva de sitios y aplicaciones. También se ocupa de que la interfaz funcione correctamente en distintos dispositivos (diseño responsivo) y cumpla estándares de accesibilidad y rendimiento.
-Desarrollador Back-End: Responsable de la lógica del lado del servidor. Desarrolla la funcionalidad interna de las aplicaciones, gestionando bases de datos, servidores y APIs. Emplea lenguajes como Java, Python, PHP o Node.js para procesar datos, implementar reglas de negocio y asegurar que la aplicación responda correctamente a las peticiones de los usuarios.
-Ingeniero DevOps: Especialista en integración y despliegue continuo (CI/CD). Se encarga de automatizar y optimizar los procesos de desarrollo, prueba y lanzamiento de software. Utiliza herramientas como Docker, Jenkins o GitHub Actions para lograr que las actualizaciones de una aplicación se puedan construir, probar y publicar de forma eficiente y confiable.
-Científico de Datos: Enfocado en la analítica y el aprendizaje automático. Procesa y analiza grandes volúmenes de datos para extraer información valiosa que apoye la toma de decisiones. Utiliza lenguajes y herramientas como Python/R, SQL y frameworks de machine learning (por ejemplo, TensorFlow, Scikit-learn) para crear modelos predictivos y obtener insights accionables para el negocio.
-Nota: Existen otros perfiles importantes (como desarrollador Full-Stack, QA/tester, Diseñador UX/UI, etc.), pero los anteriores representan roles técnicos clave, siendo el Desarrollador Front-End el foco principal de este bootcamp.
-Competencias Técnicas Valoradas en TI
-Para destacar en TI, no basta con conocer un lenguaje; se requiere un conjunto sólido de competencias técnicas. Entre las más valoradas por la industria se incluyen:
-Programación y lenguajes: Habilidad para escribir código limpio y eficiente en uno o más lenguajes. En desarrollo web front-end es imprescindible dominar HTML5, CSS3 y JavaScript, mientras que lenguajes como Python o Java cobran importancia en otras áreas. Esto implica comprender buenas prácticas de codificación, optimización y principios de diseño de software.
-Manejo de frameworks y librerías: Conocer y saber utilizar frameworks modernos acelera el desarrollo y asegura buenas arquitecturas. Por ejemplo, en Front-End es común utilizar frameworks JavaScript como React, Angular o Vue.js; en Back-End, frameworks como Django (Python) o Spring (Java) son muy apreciados. La familiaridad con estos entornos es clave para construir aplicaciones escalables de manera eficiente.
-Control de versiones (Git): Es esencial dominar herramientas de control de versiones como Git para colaborar en proyectos de código. Saber realizar commits, crear y fusionar ramas (merge), resolver conflictos y gestionar repositorios en plataformas como GitHub o GitLab es parte del día a día de cualquier desarrollador profesional.
-Metodologías ágiles de desarrollo: Entender y aplicar metodologías como Scrum o Kanban ayuda a trabajar de forma estructurada y productiva en equipo. Los desarrolladores valorados saben estimar tareas, trabajar en sprints cortos, adaptarse a cambios de requerimientos y participar en ceremonias ágiles (planificaciones, daily stand-ups, retrospectivas) para mejorar continuamente el proceso de desarrollo.
-Habilidades Personales (Soft Skills) Valoradas
-Más allá del conocimiento técnico, la industria busca profesionales con habilidades personales sobresalientes, ya que el desarrollo de software es un esfuerzo altamente colaborativo y dinámico. Algunas habilidades blandas cruciales son:
-Trabajo en equipo: Capacidad de colaborar efectivamente con colegas de diversas disciplinas. En proyectos reales, desarrolladores front-end trabajan codo a codo con back-ends, diseñadores UX/UI, gerentes de proyecto y clientes. Saber comunicarse, compartir responsabilidades y aportar en un entorno de equipo es fundamental para el éxito colectivo.
-Adaptabilidad y aprendizaje continuo: Dado el ritmo acelerado de cambio tecnológico, un buen profesional de TI debe ser flexible y estar dispuesto a aprender nuevas herramientas y lenguajes constantemente. La apertura al cambio y la rápida adaptación a nuevas tendencias o a modificaciones en los proyectos (p. ej., adoptar un framework actualizado) distinguen a los desarrolladores exitosos.
-Resolución de problemas: Los desarrolladores se enfrentan a desafíos diarios —bugs, errores de rendimiento, requerimientos cambiantes— y necesitan un fuerte pensamiento lógico y crítico para analizarlos y encontrar soluciones óptimas. Implica descomponer problemas complejos, identificar causas raíz y aplicar soluciones de manera metódica y eficiente.
-Comunicación efectiva: Poder explicar ideas técnicas con claridad tanto de forma oral como escrita. Esto abarca desde documentar código y escribir informes, hasta presentar avances a un equipo no técnico o dialogar con clientes sobre requerimientos. Una buena comunicación evita malentendidos, acelera la integración de equipos y demuestra profesionalismo.
-Perfil Profesional a Desarrollar en el Bootcamp (Front-End Developer)
-El objetivo central del curso es que cada participante construya su perfil profesional orientado al desarrollo front-end. Al finalizar el bootcamp, el estudiante habrá conformado el perfil de un Desarrollador Front-End Junior sólido, que incluye:
-Competencias técnicas adquiridas: Dominio de los fundamentos de desarrollo web (HTML5, CSS3, JavaScript), capacidad para crear interfaces responsivas que se adapten a distintos dispositivos, manejo de al menos un framework moderno (como React) para el desarrollo de aplicaciones web interactivas, y conocimiento práctico de control de versiones (Git) colaborativo.
-Buenas prácticas y metodología: Experiencia aplicando metodologías ágiles (trabajando en sprints con Scrum, uso de tableros Kanban, etc.), hábito de realizar code reviews y pruebas, y comprensión de todo el ciclo de vida de una aplicación web (desde el diseño y prototipado hasta el despliegue y mantenimiento).
-Habilidades blandas fortalecidas: Capacidad de trabajar en equipo de forma efectiva, recibiendo y dando retroalimentación; mejora del pensamiento crítico y la creatividad para resolver retos de interfaz; y desarrollo de la autonomía y adaptabilidad para continuar aprendiendo nuevas tecnologías tras el curso.
-En resumen, el egresado del bootcamp tendrá un perfil integral de Front-End Developer, combinando conocimientos técnicos actualizados con habilidades profesionales que le permitan integrarse exitosamente en equipos de desarrollo reales.
-Metodología de Enseñanza del Bootcamp
-El bootcamp adopta una metodología activa y práctica para maximizar el aprendizaje, alejándose de las clases tradicionales pasivas. Los aspectos clave de este enfoque incluyen:
-Aprendizaje basado en proyectos (ABP): La teoría se lleva inmediatamente a la práctica mediante proyectos reales o simulados. En cada módulo, los estudiantes aplican lo aprendido construyendo aplicaciones o componentes concretos, simulando situaciones que enfrentarían en un entorno laboral. Este enfoque “learning by doing” ayuda a consolidar conocimientos y a adquirir experiencia relevante.
-Trabajo en equipo y colaboración: Gran parte del trabajo se realiza en parejas o grupos, imitando la dinámica de equipos de desarrollo. Se fomenta la programación en pareja (pair programming), donde dos desarrolladores codifican juntos alternando roles, y la revisión por pares, intercambiando código entre compañeros para recibir retroalimentación constructiva. Esta colaboración constante no solo mejora las soluciones técnicas, sino que desarrolla las habilidades de comunicación y trabajo en equipo.
-Metodologías ágiles en el aula: Los proyectos del curso se gestionan con prácticas ágiles como Scrum, enseñando a los estudiantes a organizar el trabajo en sprints, gestionar un backlog de tareas y realizar reuniones diarias de seguimiento (stand-ups). De este modo, los participantes viven una experiencia cercana a un ambiente laboral real, aprendiendo a ser adaptables y a entregar resultados de forma iterativa.
-Retroalimentación y reflexión continua: Al finalizar cada proyecto o módulo, se promueve la reflexión personal sobre lo aprendido y los desafíos enfrentados. Los facilitadores brindan retroalimentación periódica, identificando áreas de mejora y logros. Estas instancias (como retrospectivas o escritos reflexivos) permiten a los estudiantes consolidar conocimientos, reconocer su progreso y ajustar sus metas de aprendizaje.
-En conjunto, esta metodología asegura un aprendizaje activo, participativo y centrado en competencias prácticas, preparando a los alumnos para afrontar trabajos reales con confianza.
-Importancia del Portafolio Profesional
-A lo largo del bootcamp, cada estudiante construirá y alimentará su portafolio profesional, entendiendo que este es una herramienta crucial para su carrera en TI. Un portafolio es esencialmente una colección de proyectos y trabajos realizados que evidencian las habilidades y competencias del desarrollador. Su importancia radica en que permite:
-Demostrar habilidades técnicas: Más allá del CV, el portafolio muestra de forma tangible lo que el desarrollador sabe hacer (tecnologías manejadas, buenas prácticas aplicadas, soluciones implementadas). Es la prueba real de sus capacidades.
-Destacar proyectos y experiencia: Permite exhibir los proyectos más relevantes desarrollados durante el curso (y fuera de él), de modo que posibles empleadores o clientes evalúen la experiencia del candidato y el tipo de desafíos que ha resuelto. Cada proyecto incluido debe ir acompañado de una breve descripción, el código fuente y, si es posible, una demo funcional.
-Construir la marca personal: Un portafolio bien presentado contribuye a la identidad profesional. Refleja el estilo, el criterio de diseño y el cuidado por la calidad del desarrollador, ayudando a diferenciarlo en el mercado laboral y aumentando su visibilidad en la industria.
-Desarrollo durante el curso: El bootcamp guía a los estudiantes en la creación progresiva de su portafolio. Módulo a módulo, los proyectos realizados se irán incorporando a este portafolio, mostrando la evolución de sus habilidades. Hacia el final del programa, cada participante contará con un portafolio en línea (por ejemplo, alojado en GitHub Pages u otra plataforma) que incluirá sus mejores trabajos, una breve biografía profesional y enlaces de contacto (como su perfil de LinkedIn). Este portafolio será un activo clave al postular a oportunidades laborales, ya que proporciona evidencia concreta del talento y aprendizaje del nuevo desarrollador front-end.
+# 🧠 Resumen del Módulo 1  
+## Orientación al Perfil y Metodología del Curso
+
+**Bootcamp Desarrollo de Aplicaciones Front-End**  
+🟢 Entregado como la 1ra Evaluación del **Módulo 1 - Orientación al Perfil y Metodología del Curso**
+
+---
+
+## 🎯 Introducción
+
+Este módulo sienta las bases del Bootcamp, presentando la realidad de la industria **TI** y el rol del **Desarrollador Front-End**.  
+Se abordan:
+
+- La evolución del sector tecnológico.
+- Perfiles profesionales más demandados.
+- Competencias técnicas y blandas requeridas.
+- Metodología activa del curso.
+- Importancia del portafolio profesional.
+
+---
+
+## 🏭 Características de la Industria TI
+
+- **🔄 Innovación continua**  
+  Nuevas tecnologías surgen constantemente (React, Vue, etc.), exigiendo actualización constante.
+
+- **🌍 Globalización del trabajo**  
+  Equipos remotos, entornos multiculturales, y colaboración asincrónica.
+
+- **📈 Alta demanda de talento**  
+  Desarrolladores son altamente solicitados en áreas como Web, IA y Ciberseguridad.
+
+- **⚡ Agilidad y flexibilidad**  
+  Metodologías ágiles como Scrum y Kanban reemplazan modelos tradicionales.
+
+---
+
+## 👩‍💻 Perfiles Profesionales TI
+
+| Perfil                 | Descripción                                                                 |
+|------------------------|-----------------------------------------------------------------------------|
+| **Front-End Dev**      | Interfaces web responsivas (HTML, CSS, JS). Accesibilidad y usabilidad.    |
+| **Back-End Dev**       | Lógica del servidor, base de datos, APIs (Java, Python, Node.js).          |
+| **DevOps**             | Automatización de integración/despliegue (Docker, GitHub Actions).         |
+| **Data Scientist**     | Análisis de datos, Machine Learning (Python, R, TensorFlow).               |
+
+---
+
+## 🧰 Competencias Técnicas
+
+- **💻 Programación:** HTML5, CSS3, JS, y más allá.
+- **🧱 Frameworks/Librerías:** React, Angular, Vue.js, Django, Spring.
+- **🔀 Control de versiones:** Git y GitHub (commits, ramas, merge).
+- **📋 Metodologías Ágiles:** Scrum, tableros Kanban, sprints.
+
+---
+
+## 🧠 Habilidades Blandas
+
+| Habilidad             | Aplicación                                                                 |
+|----------------------|------------------------------------------------------------------------------|
+| 🤝 Trabajo en equipo | Colaboración con back-ends, diseñadores, PMs.                               |
+| 🔄 Adaptabilidad     | Aprendizaje continuo frente a cambios tecnológicos.                         |
+| 🛠️ Resolución de problemas | Diagnóstico de errores y aplicación de soluciones efectivas.       |
+| 🗣️ Comunicación       | Explicación clara de ideas técnicas a diversos públicos.                   |
+
+---
+
+## 👨‍🏫 Perfil del Desarrollador Front-End
+
+Al finalizar el Bootcamp:
+
+✅ Interfaces modernas y responsivas  
+✅ Buen manejo de herramientas (Git, frameworks)  
+✅ Aplicación de metodologías ágiles  
+✅ Habilidades blandas fortalecidas  
+✅ Portafolio profesional online
+
+---
+
+## 🎓 Metodología del Bootcamp
+
+- **🚀 Aprendizaje basado en proyectos:** Aplicación práctica en proyectos reales/simulados.
+- **👥 Trabajo en equipo:** Pair programming y feedback entre pares.
+- **📆 Ágil desde el aula:** Sprint planning, dailies, retrospectivas.
+- **🔁 Retroalimentación continua:** Reflexión, mejora y evolución constante.
+
+---
+
+## 💼 Portafolio Profesional
+
+📌 Se construye a lo largo del curso.  
+
+Incluye:
+- Proyectos prácticos con descripciones.
+- Código fuente y demos.
+- Perfil profesional y contactos.
+- Publicación en plataformas como **GitHub Pages**.
+
+> 🔑 Es clave para mostrar tus capacidades al mundo y acceder a oportunidades laborales reales.
+
+---
+
+## 👩‍💻 Autora
+
+**Desarrollado por:** Karina Hidalgo  
+📘 Evaluación entregada como parte del **Módulo 1 del Bootcamp de Desarrollo Front-End**.  
+
+> _"El viaje recién comienza... pero cada línea de código cuenta."_ 💻✨
+
+---
