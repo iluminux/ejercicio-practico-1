@@ -65,22 +65,20 @@ Este proyecto es una simulación web creada con fines educativos, ambientada en 
 
 ---
 
-## ⚠️ Aviso Legal
+## ⚠️ Aviso legal
 
-Este sitio web ha sido desarrollado con fines académicos como parte de una actividad escolar. El contenido está inspirado en la saga **Resident Evil** de Capcom.
-
-Las imágenes, nombres y referencias pertenecen a sus respectivos autores. No se pretende infringir ningún derecho de autor ni lucrar con este material.
-
----
+Este sitio web ha sido desarrollado con fines académicos como parte de una actividad escolar. El contenido está inspirado en la saga **Resident Evil** de Capcom. Las imágenes, nombres y referencias pertenecen a sus respectivos autores.
 
 ## © 2025 Raccoon General Hospital
 **Una división de Umbrella Corporation®**
 
+---
+
+🟢 Entregado como la 2da parte del Ejercicio práctico del  **Módulo 2 - Desarrollo de la Interfaz de Usuario Web** del Bootcamp Desarrollo de Aplicaciones Front-End.
 
 ---
 
 ## 👩‍💻 Autora
-Desarrollado por Karina Hidalgo como parte del Ejercicio práctico 2 del Módulo 2 del Bootcamp Desarrollo de Aplicaciones Front-End.
+Desarrollado por Karina Hidalgo.
 
-Advertencia: No se garantiza la recuperación total del paciente... ni su humanidad.
-
+🚨 Advertencia: No se garantiza la recuperación total del paciente... ni su humanidad.
