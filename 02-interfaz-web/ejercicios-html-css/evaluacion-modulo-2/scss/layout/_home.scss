@@ -1,7 +1,6 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
 
-// Imagen destacada con overlays separados
 .home__hero {
   position: relative;
   overflow: hidden;
@@ -12,42 +11,45 @@
     border-radius: 0.5rem;
   }
 
+  // Título principal con fondo translúcido
   .home__overlay-title {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 1rem 1.5rem;
-    background: rgba(255, 255, 255, 0.3);
+    padding: 2rem 1rem;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0)); // ✅ mejora visibilidad
     text-align: center;
     z-index: 2;
 
-  .home__titulo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: $color-acento;
-    margin-bottom: 0.4rem;
+    .home__titulo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: $color-acento;
+      margin-bottom: 0.5rem;
+    }
+
+    .home__subtitulo {
+      font-size: 1rem;
+      color: $color-texto;
+    }
   }
 
-  .home__subtitulo {
-    font-size: 1rem;
-    color: $color-texto;
-  }
-}
-
+  // Caja de descripción técnica
   .home__overlay-text {
     position: absolute;
     bottom: $espaciado-md;
     right: $espaciado-md;
-    background-color: rgba(0, 0, 0, 0.7); // 🔧 más transparente
+    background-color: rgba(0, 0, 0, 0.8);
     color: $color-texto-inverso;
-    padding: 1.25rem 2rem;
+    padding: 1.5rem 2rem;
     border-radius: 1rem;
-    max-width: 480px; // 🔧 más ancho
-    width: 100%;
+    max-width: 500px;
+    width: 90%;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(4px);
     text-align: center;
+    z-index: 2;
 
     h2,
     p {

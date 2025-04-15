@@ -16,7 +16,7 @@
     left: 0;
     width: 100%;
     padding: 2rem 1rem 1.5rem;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.85); // un poco más opaco para mejor contraste
     text-align: center;
     z-index: 2;
 
@@ -35,9 +35,9 @@
 
   .contacto__formulario-contenedor {
     position: absolute;
-    top: 9rem;
+    top: 10rem;
     left: $espaciado-md;
-    width: 400px;
+    width: 420px;
     background-color: $color-fondo-oscuro;
     color: $color-texto-inverso;
     padding: 2rem;
@@ -46,7 +46,7 @@
     z-index: 3;
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1rem;
 
     label {
       font-weight: 600;
@@ -60,6 +60,8 @@
       border-radius: 0.4rem;
       border: none;
       font-size: 0.95rem;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: $color-texto-inverso;
     }
 
     .contacto__boton {
