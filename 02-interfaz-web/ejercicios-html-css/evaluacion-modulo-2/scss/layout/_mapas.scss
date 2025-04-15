@@ -1,0 +1,15 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.tarjetas--mapas {
+  .tarjetas__card img {
+    object-fit: contain;
+    height: auto;
+    background-color: #000; // opcional
+    padding: 1rem;
+  }
+
+  .tarjetas__card {
+    align-items: center;
+  }
+}

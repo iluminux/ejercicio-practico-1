@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hospital Raccoon City</title>
+  <link rel="icon" href="img/logo/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body class="contacto">
+  <header class="header">
+    <img src="img/logo/logo-raccoon-general-hospital.svg" alt="Hospital Raccoon City" class="header__logo" />
+    <h1 class="header__titulo">Hospital Raccoon City</h1>
+    <p class="header__subtitulo">Tecnología de vanguardia al servicio de la recuperación... o la evolución.</p>
+
+    <button class="menu-toggle">☰</button>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="equipo.html">Equipo</a>
+      <a href="instalaciones.html">Instalaciones</a>
+      <a href="mapa.html">Mapas</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contacto__hero">
+      <img src="img/fachada/entrada-original.webp" alt="Entrada Hospital Raccoon City" />
+
+      <!-- Capa superior con degradado y título -->
+      <div class="contacto__overlay-top">
+        <h2 class="home__titulo">Contacto</h2>
+        <p class="home__subtitulo">Formulario activo. Tiempo de respuesta sujeto a protocolo.</p>
+      </div>
+
+      <!-- Formulario a la izquierda -->
+      <div class="contacto__formulario-contenedor">
+        <form class="contacto__formulario" action="#" method="post">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+          <button class="contacto__boton" type="submit">Enviar</button>
+        </form>
+      </div>
+
+      <!-- Contenedor de datos a la derecha -->
+      <div class="contacto__info-overlay">
+        <h2>Hospital Raccoon City</h2>
+        <p><strong>Dirección:</strong> Av. Principal 666 · Zona Médica Central · Raccoon City</p>
+        <p><strong>Línea directa:</strong> +01 555-UMBRELLA</p>
+        <p><strong>Canal autorizado:</strong> contacto@raccoonhospital.com</p>
+        <p><strong>Disponibilidad:</strong> Atención continua. Protocolo activo 24/7.</p>
+      </div>
+    </section>
+
+    <!-- Aviso Legal -->
+    <section class="equipo__aviso-legal home__aviso-legal">
+      <strong>⚠ Aviso Legal:</strong>
+      <p>
+        Este sitio web ha sido desarrollado con fines académicos como parte de una actividad escolar.
+        El contenido está inspirado en la saga <strong>Resident Evil</strong> de Capcom.
+        Las imágenes, nombres y referencias pertenecen a sus respectivos autores.
+        No se pretende infringir ningún derecho de autor ni lucrar con este material.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__contenido container text-center">
+      <p class="footer__texto">© 2025 Raccoon General Hospital - Todos los derechos reservados</p>
+      <p class="footer__texto">Una división de Umbrella Corporation®</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

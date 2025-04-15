@@ -1,0 +1,65 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+// Imagen destacada con overlays separados
+.home__hero {
+  position: relative;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    display: block;
+    border-radius: 0.5rem;
+  }
+
+  .home__overlay-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 1rem 1.5rem;
+    background: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    z-index: 2;
+
+  .home__titulo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $color-acento;
+    margin-bottom: 0.4rem;
+  }
+
+  .home__subtitulo {
+    font-size: 1rem;
+    color: $color-texto;
+  }
+}
+
+  .home__overlay-text {
+    position: absolute;
+    bottom: $espaciado-md;
+    right: $espaciado-md;
+    background-color: rgba(0, 0, 0, 0.7); // 🔧 más transparente
+    color: $color-texto-inverso;
+    padding: 1.25rem 2rem;
+    border-radius: 1rem;
+    max-width: 480px; // 🔧 más ancho
+    width: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    text-align: center;
+
+    h2,
+    p {
+      color: $color-texto-inverso;
+      margin: 0 0 0.5rem 0;
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+  }
+}

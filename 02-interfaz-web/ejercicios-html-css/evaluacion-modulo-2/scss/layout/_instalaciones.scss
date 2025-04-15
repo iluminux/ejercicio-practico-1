@@ -1,0 +1,17 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.tarjetas--instalaciones {
+  .tarjetas__card {
+    background-color: lighten($color-fondo-oscuro, 5%);
+
+    .tarjetas__titulo {
+      color: $color-acento;
+    }
+
+    .tarjetas__texto {
+      color: lighten($color-texto-inverso, 30%);
+    }
+  }
+}
+
