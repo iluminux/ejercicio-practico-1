@@ -9,72 +9,139 @@ Proyecto desarrollado para el **Módulo 2: Programación Web Frontend**
 
 ## 📌 Descripción
 
-Sitio web ficticio del *Hospital Raccoon City*, inspirado en la saga **Resident Evil**, diseñado con fines académicos.  
-El sitio permite navegar entre las secciones de inicio, equipo médico, instalaciones, mapas y contacto.  
-Cada página implementa diseño responsivo, SCSS modular, y componentes visuales adaptados desde Bootstrap 5.
+Sitio web ficticio del **Hospital Raccoon City**, inspirado en la saga *Resident Evil*.  
+Diseñado con fines académicos para demostrar habilidades en desarrollo web frontend:  
+maquetación semántica, diseño responsive, SCSS modular y uso de componentes Bootstrap.
+
+El sitio incluye navegación completa entre las secciones: inicio, equipo médico, instalaciones, mapas y contacto.  
+Todas las páginas cuentan con diseño adaptado, tipografías personalizadas y estilos consistentes.
 
 ---
 
 ## 🛠️ Tecnologías y Herramientas
 
-- HTML5
-- SCSS / SASS (estructura modular 7–1)
-- Bootstrap 5.3.3 (vía CDN)
-- JavaScript (mínimo, para interacción básica)
-- Imágenes `.webp` optimizadas
-- Diseño responsivo (media queries + grid system)
+- **HTML5**
+- **SCSS / SASS** (estructura 7–1)
+- **Bootstrap 5.3.3** (integrado vía CDN)
+- **JavaScript básico** (interacción mínima)
+- **Imágenes .webp optimizadas**
+- **Diseño responsive** (con media queries y CSS Grid)
+
+---
+
+## 📁 Estructura del Proyecto
+
+/EVALUACION-MODULO-2
+│
+├── css/
+│   ├── main.css
+│   └── main.css.map
+│
+├── img/
+│   ├── logo/
+│   ├── fachada/
+│   ├── equipo/
+│   ├── instalaciones/
+│   ├── mapas/
+│   ├── iconos/
+│   └── screenshots/
+│
+├── scss/
+│   ├── abstracts/
+│   │   ├── _mixins.scss
+│   │   └── _variables.scss
+│   │
+│   ├── base/
+│   │   ├── _reset.scss
+│   │   └── _typography.scss
+│   │
+│   ├── components/
+│   │   ├── _buttons.scss
+│   │   ├── _footer.scss
+│   │   ├── _formulario.scss
+│   │   ├── _header.scss
+│   │   ├── _intro.scss
+│   │   ├── _sections.scss
+│   │   └── _tarjetas.scss
+│   │
+│   ├── layout/
+│   │   ├── _contacto.scss
+│   │   ├── _equipo.scss
+│   │   ├── _home.scss
+│   │   ├── _instalaciones.scss
+│   │   └── _mapas.scss
+│   │
+│   ├── utilities/
+│   │   └── _utilities.scss
+│   │
+│   ├── vendors/
+│   │   └── _bootstrap.scss
+│   │
+│   └── main.scss
+│
+├── index.html
+├── contacto.html
+├── equipo.html
+├── instalaciones.html
+├── mapa.html
+├── script.js
+├── package.json
+├── package-lock.json
+└── README.md
 
 ---
 
 ## 📄 Estructura del Sitio
 
-| Página | Descripción |
-|--------|-------------|
-| `index.html`         | Página de inicio con imagen hero, texto flotante y aviso legal. |
-| `equipo.html`        | Tarjetas visuales del equipo médico. |
-| `instalaciones.html` | Galería de instalaciones con imágenes y textos. |
-| `mapa.html`          | Planos del hospital presentados como tarjetas. |
-| `contacto.html`      | Formulario flotante estilizado + datos institucionales. |
+| Página              | Descripción                                                                            |
+|---------------------|----------------------------------------------------------------------------------------|
+| `index.html`         | Página principal con imagen hero, texto flotante, e introducción institucional.       |
+| `equipo.html`        | Muestra al equipo médico con tarjetas visuales estilizadas.                          |
+| `instalaciones.html` | Galería de las distintas instalaciones con imágenes e información detallada.         |
+| `mapa.html`          | Planos del hospital representados como tarjetas interactivas.                        |
+| `contacto.html`      | Formulario de contacto flotante con estilo personalizado y datos de la institución.  |
 
 ---
 
-## 🧩 Funcionalidades implementadas
+## 🧩 Funcionalidades Implementadas
 
-✅ Navegación entre páginas  
-✅ SCSS modular y ordenado  
-✅ Bootstrap (tarjetas, botones, formulario)  
-✅ Diseño 100% responsive  
-✅ Títulos flotantes y overlays visuales  
-✅ Formulario accesible y visualmente integrado  
-✅ Aviso legal uniforme
+- ✅ Navegación entre páginas
+- ✅ SCSS modular y ordenado (7–1)
+- ✅ Bootstrap 5 integrado y personalizado
+- ✅ Diseño completamente responsivo
+- ✅ Hero banners y overlays visuales
+- ✅ Tarjetas visuales con efectos hover
+- ✅ Formulario accesible y estilizado
+- ✅ Aviso legal en todas las páginas
 
 ---
 
-## 📸 Capturas de pantalla
+## 📸 Capturas de Pantalla
 
 | Inicio | Equipo |
 |:--:|:--:|
-| ![](./screenshots/screenshot-index.jpeg) | ![](./screenshots/screenshot-equipo.jpeg) |
+| ![](img/screenshots/screenshot-index.jpeg) | ![](img/screenshots/screenshot-equipo.jpeg) |
 
 | Instalaciones | Mapas |
 |:--:|:--:|
-| ![](./screenshots/screenshot-instalaciones.jpeg) | ![](./screenshots/screenshot-mapas.jpeg) |
+| ![](img/screenshots/screenshot-instalaciones.jpeg) | ![](img/screenshots/screenshot-mapas.jpeg) |
 
 | Contacto |
 |:--:|
-| ![](./screenshots/screenshot-contacto.jpeg) |
+| ![](img/screenshots/screenshot-contacto.jpeg) |
 
 ---
 
 ## ⚠️ Observaciones
 
-Este sitio fue creado con fines **académicos** como parte del proceso de formación en desarrollo web front-end.  
-No tiene fines comerciales. Todo el contenido visual está inspirado en la saga **Resident Evil** de **Capcom®**.
+Este sitio fue creado exclusivamente con fines **académicos**.  
+Todo el contenido visual está inspirado en la saga **Resident Evil** de **Capcom®**.  
+No posee intención comercial ni de lucro.
 
 ---
 
 ## ✨ Autoría
 
-**Karina Hidalgo**  
-Carrera: Diseño y Desarrollo Web  
-Módulo 2 · Actividad Práctica Final
+Desarrollado por: **Karina Hidalgo**  
+Bootcamp Desarrollo de Aplicaciones Front-End 
+Evaluación · **Módulo 2**
