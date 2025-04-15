@@ -1,65 +1,80 @@
-# Hospital Raccoon City
+# 🏥 Hospital Raccoon City — Sitio Web
 
-Este proyecto es una entrega para el **Ejercicio Práctico 3** del Módulo 2 del curso de Desarrollo Front-End. El objetivo fue maquetar una interfaz web utilizando HTML y SCSS organizados por arquitectura 7-1, e implementar variables, mixins y funciones de color personalizadas.
+Proyecto desarrollado para el **Módulo 2: Programación Web Frontend**  
+**Institución educativa:** Becas Capital Humano CORFO & CHILETEC | OTEC Adalid Ltda.  
+**Estudiante:** Karina Hidalgo  
+**Fecha:** Abril 2025
 
-## 🏛️ Descripción
-El sitio simula la página de un hospital ficticio basado en el universo de *Resident Evil*, con fines estrictamente académicos. Contiene estructura HTML semántica, hojas de estilo escritas en SCSS, y una organización de archivos según buenas prácticas.
+---
 
-## 🔧 Tecnologías utilizadas
+## 📌 Descripción
+
+Sitio web ficticio del *Hospital Raccoon City*, inspirado en la saga **Resident Evil**, diseñado con fines académicos.  
+El sitio permite navegar entre las secciones de inicio, equipo médico, instalaciones, mapas y contacto.  
+Cada página implementa diseño responsivo, SCSS modular, y componentes visuales adaptados desde Bootstrap 5.
+
+---
+
+## 🛠️ Tecnologías y Herramientas
 
 - HTML5
-- SCSS (SASS)
-- Arquitectura 7-1 para SCSS
-- VS Code + Live Server
-
-## 🌐 Estructura de carpetas (resumen)
-
-```
-/ejercicio-3
-|-- css/
-|   |-- main.css
-|
-|-- scss/
-|   |-- abstracts/
-|   |   |-- _variables.scss
-|   |   |-- _mixins.scss
-|   |-- base/
-|   |-- components/
-|   |-- layout/
-|   |-- main.scss
-|
-|-- img/
-|   |-- logo/
-|   |-- fachada/
-|   |-- screenshots/screenshot-inicio.jpg
-|
-|-- index.html
-|-- contacto.html
-|-- instalaciones.html
-|-- equipo.html
-|-- mapa.html
-```
-
-## 📅 Estado del proyecto
-
-El foco del ejercicio fue dejar funcional y con estilos aplicados **la página de inicio (`index.html`)**. Las demás páginas están presentes pero sin desarrollo estilístico completo, ya que **no es requisito según la rúbrica**.
-
-## 📸 Vista previa
-
-A continuación se muestra una captura de pantalla de la página de inicio con los estilos aplicados desde SCSS:
-
-![Captura de pantalla de la página de inicio](img/screenshots/screenshoot-inicio.jpeg)
-
-## ⚠️ Aviso legal
-
-Este sitio web ha sido desarrollado con fines académicos como parte de una actividad escolar. El contenido está inspirado en la saga **Resident Evil** de Capcom. Las imágenes, nombres y referencias pertenecen a sus respectivos autores.
-
----
-🟢 Entregado como la 3ra parte del Ejercicio práctico del  **Módulo 2 - Desarrollo de la Interfaz de Usuario Web** del Bootcamp Desarrollo de Aplicaciones Front-End.
+- SCSS / SASS (estructura modular 7–1)
+- Bootstrap 5.3.3 (vía CDN)
+- JavaScript (mínimo, para interacción básica)
+- Imágenes `.webp` optimizadas
+- Diseño responsivo (media queries + grid system)
 
 ---
 
-## 👩‍💻 Autora
-Desarrollado por Karina Hidalgo.
+## 📄 Estructura del Sitio
 
-🚨 Advertencia: No se garantiza la recuperación total del paciente... ni su humanidad.
+| Página | Descripción |
+|--------|-------------|
+| `index.html`         | Página de inicio con imagen hero, texto flotante y aviso legal. |
+| `equipo.html`        | Tarjetas visuales del equipo médico. |
+| `instalaciones.html` | Galería de instalaciones con imágenes y textos. |
+| `mapa.html`          | Planos del hospital presentados como tarjetas. |
+| `contacto.html`      | Formulario flotante estilizado + datos institucionales. |
+
+---
+
+## 🧩 Funcionalidades implementadas
+
+✅ Navegación entre páginas  
+✅ SCSS modular y ordenado  
+✅ Bootstrap (tarjetas, botones, formulario)  
+✅ Diseño 100% responsive  
+✅ Títulos flotantes y overlays visuales  
+✅ Formulario accesible y visualmente integrado  
+✅ Aviso legal uniforme
+
+---
+
+## 📸 Capturas de pantalla
+
+| Inicio | Equipo |
+|:--:|:--:|
+| ![](./screenshots/screenshot-index.jpeg) | ![](./screenshots/screenshot-equipo.jpeg) |
+
+| Instalaciones | Mapas |
+|:--:|:--:|
+| ![](./screenshots/screenshot-instalaciones.jpeg) | ![](./screenshots/screenshot-mapas.jpeg) |
+
+| Contacto |
+|:--:|
+| ![](./screenshots/screenshot-contacto.jpeg) |
+
+---
+
+## ⚠️ Observaciones
+
+Este sitio fue creado con fines **académicos** como parte del proceso de formación en desarrollo web front-end.  
+No tiene fines comerciales. Todo el contenido visual está inspirado en la saga **Resident Evil** de **Capcom®**.
+
+---
+
+## ✨ Autoría
+
+**Karina Hidalgo**  
+Carrera: Diseño y Desarrollo Web  
+Módulo 2 · Actividad Práctica Final
