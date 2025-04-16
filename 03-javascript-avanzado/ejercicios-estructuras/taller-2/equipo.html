@@ -18,7 +18,7 @@
     <img src="img/logo/logo-raccoon-general-hospital.svg" alt="Hospital Raccoon City" class="header__logo" />
     <h1 class="header__titulo">Hospital Raccoon City</h1>
     <p class="header__subtitulo">Tecnología de vanguardia al servicio de la recuperación... o la evolución.</p>
-  
+
     <button class="menu-toggle">☰</button>
     <nav class="nav">
       <a href="index.html">Inicio</a>
@@ -35,12 +35,10 @@
       <h4 class="pagina__titulo">Nuestro Equipo</h4>
       <p class="pagina__descripcion">
         En el Hospital Raccoon City contamos con profesionales de excelencia. Nuestro equipo combina conocimientos médicos tradicionales con avances en bioingeniería y proyectos especiales.
-
-
       </p>
     </section>
 
-    <!-- Tarjetas del equipo médico con Bootstrap -->
+    <!-- Tarjetas estáticas con imágenes -->
     <section class="container py-4">
       <div class="row g-4">
         <div class="col-md-6 col-lg-4">
@@ -95,6 +93,12 @@
       </div>
     </section>
 
+    <!-- 🔁 Tarjetas dinámicas desde JS -->
+    <section class="container py-5">
+      <h4 class="text-center text-light mb-4">Doctores destacados por experiencia</h4>
+      <div class="row g-4" id="lista-doctores"></div>
+    </section>
+
     <!-- Aviso Legal -->
     <section class="equipo__aviso-legal home__aviso-legal">
       <strong>⚠ Aviso Legal:</strong>
@@ -117,6 +121,7 @@
   <!-- Bootstrap JS (opcional) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+  <!-- Tu script -->
   <script src="script.js"></script>
 </body>
 </html>
