@@ -107,5 +107,4 @@ Este proyecto fue desarrollado con fines académicos. El contenido está inspira
 ---
 
 ## 👩‍💻 Autoría
-
 Desarrollado por: **Karina Hidalgo**  
