@@ -68,7 +68,7 @@ El `event loop` en JS es el mecanismo que gestiona **la ejecución de funciones 
 ## 📸 Capturas del proyecto
 
 ### 🧠 Inicio
-![Inicio](img/screenshots/screenshot-inicio.jpeg)
+![Inicio](img/screenshots/screenshoot-index.jpeg)
 
 ### 🧪 Sección equipo
 ![Equipo](img/screenshots/screenshot-equipo.jpeg)
@@ -77,7 +77,7 @@ El `event loop` en JS es el mecanismo que gestiona **la ejecución de funciones 
 ![Instalaciones](img/screenshots/screenshot-instalaciones.jpeg)
 
 ### 🗺️ Mapa
-![Mapa](img/screenshots/screenshot-mapas.jpeg)
+![Mapa](img/screenshots/screenshot-mapa.jpeg)
 
 ### 📋 Validaciones
 - Nombre vacío  
