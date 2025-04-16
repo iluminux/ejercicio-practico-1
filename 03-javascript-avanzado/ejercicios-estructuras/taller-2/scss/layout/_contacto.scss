@@ -1,0 +1,139 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.contacto__hero {
+  position: relative;
+
+  img {
+    width: 100%;
+    display: block;
+    border-radius: 0.5rem;
+  }
+
+  .contacto__overlay-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 1rem 1.5rem;
+    background: rgba(255, 255, 255, 0.85); // un poco más opaco para mejor contraste
+    text-align: center;
+    z-index: 2;
+
+    .home__titulo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: $color-acento;
+      margin-bottom: 0.4rem;
+    }
+
+    .home__subtitulo {
+      font-size: 1rem;
+      color: $color-texto;
+    }
+  }
+
+  .contacto__formulario-contenedor {
+    position: absolute;
+    top: 10rem;
+    left: $espaciado-md;
+    width: 420px;
+    background-color: $color-fondo-oscuro;
+    color: $color-texto-inverso;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    label {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.6rem;
+      border-radius: 0.4rem;
+      border: none;
+      font-size: 0.95rem;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: $color-texto-inverso;
+    }
+
+    .contacto__boton {
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: linear-gradient(to right, #d60000, #ff0000);
+      color: white;
+      border: none;
+      border-radius: 0.4rem;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+
+      &:hover {
+        background: linear-gradient(to right, #b30000, #e60000);
+      }
+    }
+  }
+
+  .contacto__info-overlay {
+    position: absolute;
+    bottom: $espaciado-sm;
+    right: $espaciado-sm;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: $color-texto-inverso;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 2;
+
+    h2,
+    p,
+    strong {
+      color: $color-texto-inverso;
+    }
+
+    p {
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
+      font-weight: 600;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .contacto__formulario-contenedor {
+      position: relative;
+      top: auto;
+      left: auto;
+      margin: 2rem auto;
+      width: 90%;
+    }
+
+    .contacto__info-overlay {
+      position: relative;
+      bottom: auto;
+      right: auto;
+      margin: 2rem auto;
+      width: 90%;
+    }
+  }
+}
+
+main {
+  padding-top: 180px; // ajusta según el alto visual de tu header
+}

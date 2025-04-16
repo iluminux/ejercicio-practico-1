@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instalaciones - Hospital Raccoon City</title>
+
+  <!-- ✅ Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Favicon y estilos personalizados -->
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="icon" href="img/logo/favicon.ico" type="image/x-icon" />
+</head>
+
+<body class="instalaciones">
+  <header class="header">
+    <img src="img/logo/logo-raccoon-general-hospital.svg" alt="Hospital Raccoon City" class="header__logo" />
+    <h1 class="header__titulo">Hospital Raccoon City</h1>
+    <p class="header__subtitulo">Tecnología de vanguardia al servicio de la recuperación... o la evolución.</p>
+
+    <button class="menu-toggle">☰</button>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="equipo.html">Equipo</a>
+      <a href="instalaciones.html">Instalaciones</a>
+      <a href="mapa.html">Mapas</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- INSTALACIONES -->
+    <section class="pagina__intro pagina__intro--compacta text-center">
+      <h3 class="pagina__titulo">Instalaciones</h3>
+      <p class="pagina__descripcion">
+        Nuestro hospital cuenta con áreas equipadas para brindar atención médica y desarrollar investigaciones avanzadas. Algunas instalaciones permanecen cerradas al público general.
+      </p>
+    </section>
+
+    <!-- Cards con Bootstrap -->
+    <section class="container py-4">
+      <div class="row g-4">
+        <!-- Card -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 bg-dark text-light">
+            <img src="img/instalaciones/vestibulo.webp" class="card-img-top" alt="Vestíbulo del hospital">
+            <div class="card-body">
+              <h5 class="card-title">Vestíbulo</h5>
+              <p class="card-text">Zona de acceso y recepción general.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 bg-dark text-light">
+            <img src="img/instalaciones/sala-medicos.webp" class="card-img-top" alt="Sala de médicos">
+            <div class="card-body">
+              <h5 class="card-title">Sala de Médicos</h5>
+              <p class="card-text">Centro de operaciones clínicas y reuniones confidenciales.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 bg-dark text-light">
+            <img src="img/instalaciones/habitacion-401.webp" class="card-img-top" alt="Habitación 401">
+            <div class="card-body">
+              <h5 class="card-title">Habitación 401</h5>
+              <p class="card-text">Área de recuperación con monitoreo avanzado.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 bg-dark text-light">
+            <img src="img/instalaciones/habitacion-402.webp" class="card-img-top" alt="Habitación 402">
+            <div class="card-body">
+              <h5 class="card-title">Habitación 402</h5>
+              <p class="card-text">Habitación estándar para pacientes de bajo riesgo.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 bg-dark text-light">
+            <img src="img/instalaciones/laboratorio-3B.webp" class="card-img-top" alt="Laboratorio 3B">
+            <div class="card-body">
+              <h5 class="card-title">Laboratorio 3B</h5>
+              <p class="card-text">Investigación biomédica y contención experimental.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 bg-dark text-light">
+            <img src="img/instalaciones/trastero-sotano.webp" class="card-img-top" alt="Trastero en el sótano del hospital">
+            <div class="card-body">
+              <h5 class="card-title">Área Restringida</h5>
+              <p class="card-text">Acceso limitado. Equipamiento especializado almacenado.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 bg-dark text-light">
+            <img src="img/instalaciones/cuarto-datos.webp" class="card-img-top" alt="Cuarto de datos del hospital">
+            <div class="card-body">
+              <h5 class="card-title">Centro de Datos</h5>
+              <p class="card-text">Archivo digital de expedientes, pruebas y grabaciones.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 bg-dark text-light">
+            <img src="img/instalaciones/despacho.webp" class="card-img-top" alt="Despacho administrativo del director">
+            <div class="card-body">
+              <h5 class="card-title">Despacho</h5>
+              <p class="card-text">Oficina de dirección y documentación confidencial.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Aviso Legal -->
+    <section class="equipo__aviso-legal home__aviso-legal">
+      <strong>⚠ Aviso Legal:</strong>
+      <p>
+        Este sitio web ha sido desarrollado con fines académicos como parte de una actividad escolar.
+        El contenido está inspirado en la saga <strong>Resident Evil</strong> de Capcom.
+        Las imágenes, nombres y referencias pertenecen a sus respectivos autores.
+        No se pretende infringir ningún derecho de autor ni lucrar con este material.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__contenido container text-center">
+      <p class="footer__texto">© 2025 Raccoon General Hospital - Todos los derechos reservados</p>
+      <p class="footer__texto">Una división de Umbrella Corporation®</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS opcional -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>

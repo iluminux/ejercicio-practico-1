@@ -1,0 +1,41 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.pagina__intro {
+    text-align: center;
+    padding: 1rem 1rem;
+  
+    @media (min-width: 768px) {
+      padding: 1.5rem 1rem;
+    }
+  
+    &--compacta {
+      padding: 1.5rem 1rem;
+  
+      @media (min-width: 768px) {
+        padding: 2.25rem 1rem;
+      }
+    }
+  
+    .pagina__titulo {
+      font-size: 1.25rem;
+      color: $color-principal;
+      margin-bottom: 0.5rem;
+  
+      @media (min-width: 768px) {
+        font-size: 1.5rem;
+      }
+    }
+  
+    .pagina__descripcion {
+      font-size: 0.9rem;
+      color: $color-texto;
+      max-width: 720px;
+      margin: 0 auto;
+  
+      @media (min-width: 768px) {
+        font-size: 0.95rem;
+      }
+    }
+  }
+  

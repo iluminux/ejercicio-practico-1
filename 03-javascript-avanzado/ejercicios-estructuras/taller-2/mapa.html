@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mapas - Hospital Raccoon City</title>
+
+  <!-- ✅ Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Favicon y estilos personalizados -->
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="icon" href="img/logo/favicon.ico" type="image/x-icon" />
+</head>
+
+<body class="mapas">
+  <header class="header">
+    <img src="img/logo/logo-raccoon-general-hospital.svg" alt="Hospital Raccoon City" class="header__logo" />
+    <h1 class="header__titulo">Hospital Raccoon City</h1>
+    <p class="header__subtitulo">Tecnología de vanguardia al servicio de la recuperación... o la evolución.</p>
+
+    <button class="menu-toggle">☰</button>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="equipo.html">Equipo</a>
+      <a href="instalaciones.html">Instalaciones</a>
+      <a href="mapa.html">Mapas</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- MAPAS -->
+    <section class="pagina__intro pagina__intro--compacta text-center">
+      <h4 class="pagina__titulo">Mapas del Hospital</h4>
+      <p class="pagina__descripcion">
+        Conoce la distribución general del Hospital Raccoon City. Algunos accesos se encuentran clausurados por motivos de seguridad institucional.
+      </p>
+    </section>
+
+    <!-- Tarjetas de mapas con Bootstrap -->
+    <section class="container py-4">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 bg-dark text-light">
+            <img src="img/mapas/planta-baja.webp" class="card-img-top" alt="Mapa de la planta baja del hospital" />
+            <div class="card-body">
+              <h5 class="card-title">Planta Baja</h5>
+              <p class="card-text">Área de recepción, quirófano, sala de decisiones.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 bg-dark text-light">
+            <img src="img/mapas/4to-piso.webp" class="card-img-top" alt="Mapa del cuarto piso del hospital" />
+            <div class="card-body">
+              <h5 class="card-title">4to Piso</h5>
+              <p class="card-text">Habitaciones, cuarto de datos y pasillo de control.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 bg-dark text-light">
+            <img src="img/mapas/subsuelo-3.webp" class="card-img-top" alt="Mapa del tercer subsuelo del hospital" />
+            <div class="card-body">
+              <h5 class="card-title">3er Subsuelo</h5>
+              <p class="card-text">Laboratorio experimental, trastero y pasillos restringidos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Aviso Legal -->
+    <section class="equipo__aviso-legal home__aviso-legal">
+      <strong>⚠ Aviso Legal</strong>
+      <p>
+        Este sitio web ha sido desarrollado con fines académicos como parte de una actividad escolar.
+        El contenido está inspirado en la saga <strong>Resident Evil</strong> de Capcom.
+        Las imágenes, nombres y referencias pertenecen a sus respectivos autores.
+        No se pretende infringir ningún derecho de autor ni lucrar con este material.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__contenido container text-center">
+      <p class="footer__texto">© 2025 Raccoon General Hospital - Todos los derechos reservados</p>
+      <p class="footer__texto">Una división de Umbrella Corporation®</p>
+    </div>
+  </footer>
+
+  <!-- ✅ Bootstrap JS opcional -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
