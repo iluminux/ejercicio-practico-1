@@ -1,0 +1,78 @@
+# 🧠 Taller 1 – Módulo 3: Análisis Técnico – JavaScript y TypeScript en el Proyecto Hospital Raccoon City
+
+Este repositorio contiene el informe correspondiente al Taller 1 del Módulo 3 del Bootcamp de Desarrollo Front-End 2024. El objetivo del taller fue realizar una investigación sobre las características avanzadas de JavaScript, su evolución y la pertinencia de integrar JavaScript moderno o TypeScript en nuestro proyecto web: **Hospital Raccoon City**.
+
+---
+
+## 📌 Objetivo del Taller
+
+Evaluar el impacto y beneficios de incorporar JavaScript avanzado y/o TypeScript en el desarrollo del sitio web, considerando:
+
+- Historia y fortalezas del lenguaje JavaScript.
+- Evolución del estándar ECMAScript.
+- Ventajas y desventajas de TypeScript.
+- Aplicación en el contexto del proyecto del hospital.
+- Propuesta técnica concreta para la integración de tecnologías modernas.
+
+---
+
+## 📂 Archivos Incluidos
+
+- `informe-taller1.pdf`: Documento oficial del informe con análisis, investigación y propuesta técnica.
+- Este `README.md`: Resumen del análisis y conclusiones.
+
+---
+
+## 💉 Proyecto Base: Hospital Raccoon City
+
+El informe se basa en el desarrollo web del sitio ficticio Hospital Raccoon City, que incluye:
+
+- Página de inicio (Home)
+- Sección de equipo médico
+- Formulario de contacto de emergencia
+
+Este proyecto representa un entorno clínico interactivo, y fue desarrollado aplicando HTML semántico, CSS modular con SASS, Bootstrap para componentes responsivos, y JavaScript para la lógica de interacción.
+
+---
+
+## 📊 Conclusiones del Informe
+
+Tras el análisis detallado se concluyó que:
+
+> **Integrar JavaScript moderno y TypeScript de manera progresiva es una decisión técnica adecuada para este proyecto**, ya que mejora la calidad del código, facilita el mantenimiento y permite escalar funcionalidades a futuro, como validaciones avanzadas o conexión con APIs médicas.
+
+### Ventajas de TypeScript:
+- Tipado estático para prevenir errores.
+- Mejor autocompletado y mantenimiento en proyectos colaborativos.
+- Escalabilidad en proyectos grandes o críticos.
+
+### Desventajas:
+- Requiere curva de aprendizaje.
+- Añade una etapa de compilación y configuración.
+
+---
+
+## 🛠️ Propuesta Técnica
+
+- Migrar progresivamente los scripts JS a TypeScript.
+- Modularizar funciones (formularios, navegación, alertas).
+- Usar herramientas como Vite o Webpack para compilar TS.
+- Integrar validaciones clínicas mediante lógica fuerte en TS.
+
+---
+
+## 🧪 Repositorio del Proyecto
+
+[https://github.com/iluminux/Bootcamp-FrontEnd](https://github.com/iluminux/Bootcamp-FrontEnd)
+
+---
+
+## 👩‍💻 Integrantes
+
+- Víctor Ramírez  
+- Matías Espinoza  
+- Karina Hidalgo  
+
+---
+
+## 📅 Bootcamp Desarrollo de Aplicaciones Front-End 2024
