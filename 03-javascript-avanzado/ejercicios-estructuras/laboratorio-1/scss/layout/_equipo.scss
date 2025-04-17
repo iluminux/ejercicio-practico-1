@@ -1,0 +1,103 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+// ================================
+// 🧾 Estilos para la sección Equipo
+// ================================
+
+// 🧬 Tarjetas médicas Bootstrap
+.card {
+  border: none;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: $color-fondo-oscuro !important;
+  color: $color-texto-inverso;
+
+  img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: $color-acento;
+    margin-bottom: 0.4rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: $color-texto-suave;
+  }
+}
+
+// ================================
+// 📐 Espaciado del main
+// ================================
+main {
+  padding-top: 180px;
+
+  @media (max-width: $breakpoint-md) {
+    padding-top: 160px;
+  }
+}
+
+// ================================
+// 🔍 Resultados de Búsqueda
+// ================================
+#resultado-busqueda:empty {
+  display: none;
+}
+
+#resultado-busqueda {
+  transition: all 0.3s ease-in-out;
+  min-height: 0;
+  margin-bottom: 1rem;
+}
+
+// ================================
+// 🖱 Buscador con ícono de lupa
+// ================================
+#form-busqueda {
+  margin-top: 2rem;
+
+  .position-relative {
+    i.bi-search {
+      position: absolute;
+      top: 50%;
+      left: 1.25rem;
+      transform: translateY(-50%);
+      color: $color-icono-lupa;
+      pointer-events: none;
+      font-size: 1.1rem;
+      z-index: 2;
+    }
+
+    input {
+      padding-left: 2.5rem;
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px dashed #ccc;
+    }
+  }
+
+  input:focus {
+    border-color: $color-acento;
+    box-shadow: 0 0 0 0.2rem rgba($color-acento, 0.25);
+  }
+
+  @media (max-width: $breakpoint-md) {
+    .position-relative {
+      i.bi-search {
+        left: 1rem;
+        font-size: 1rem;
+      }
+
+      input {
+        padding-left: 2.2rem;
+      }
+    }
+  }
+}
+

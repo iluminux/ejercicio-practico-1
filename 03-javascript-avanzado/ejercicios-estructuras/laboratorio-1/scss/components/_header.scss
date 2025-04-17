@@ -1,4 +1,5 @@
 @use '../abstracts/variables' as v;
+@use 'sass:color';
 
 .header {
   background-color: v.$color-fondo-oscuro;
@@ -6,7 +7,6 @@
   padding: v.$espaciado-md 0 v.$espaciado-sm;
   text-align: center;
 
-  // ✅ Header fijo
   position: fixed;
   top: 0;
   left: 0;
@@ -14,7 +14,6 @@
   z-index: 1000;
   min-height: 160px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  // border: 1px solid red; // (opcional para debug visual)
 
   &__logo {
     width: 60px;
@@ -34,8 +33,12 @@
 
   &__subtitulo {
     font-size: 0.95rem;
-    margin: v.$espaciado-xs 0 v.$espaciado-md;
-    color: lighten(v.$color-texto-inverso, 10%);
+    margin: v.$espaciado-xs auto v.$espaciado-md;
+    color: color.adjust(v.$color-texto-inverso, $lightness: 10%);
+    max-width: 90%;
+    display: block;
+    padding: 0 1rem;
+    word-wrap: break-word;
   }
 
   .menu-toggle {
@@ -96,6 +99,8 @@
   }
 
   @media (max-width: v.$breakpoint-md) {
+    min-height: 200px;
+
     .menu-toggle {
       display: block;
     }

@@ -131,8 +131,12 @@ p {
 }
 .header__subtitulo {
   font-size: 0.95rem;
-  margin: 0.5rem 0 2rem;
+  margin: 0.5rem auto 2rem;
   color: white;
+  max-width: 90%;
+  display: block;
+  padding: 0 1rem;
+  word-wrap: break-word;
 }
 .header .menu-toggle {
   display: none;
@@ -184,6 +188,9 @@ p {
   display: flex;
 }
 @media (max-width: 768px) {
+  .header {
+    min-height: 200px;
+  }
   .header .menu-toggle {
     display: block;
   }
@@ -612,6 +619,53 @@ main {
 main {
   padding-top: 180px;
 }
+@media (max-width: 768px) {
+  main {
+    padding-top: 160px;
+  }
+}
+
+#resultado-busqueda:empty {
+  display: none;
+}
+
+#resultado-busqueda {
+  transition: all 0.3s ease-in-out;
+  min-height: 0;
+  margin-bottom: 1rem;
+}
+
+#form-busqueda {
+  margin-top: 2rem;
+}
+#form-busqueda .position-relative i.bi-search {
+  position: absolute;
+  top: 50%;
+  left: 1.25rem;
+  transform: translateY(-50%);
+  color: white;
+  pointer-events: none;
+  font-size: 1.1rem;
+  z-index: 2;
+}
+#form-busqueda .position-relative input {
+  padding-left: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px dashed #ccc;
+}
+#form-busqueda input:focus {
+  border-color: #e50914;
+  box-shadow: 0 0 0 0.2rem rgba(229, 9, 20, 0.25);
+}
+@media (max-width: 768px) {
+  #form-busqueda .position-relative i.bi-search {
+    left: 1rem;
+    font-size: 1rem;
+  }
+  #form-busqueda .position-relative input {
+    padding-left: 2.2rem;
+  }
+}
 
 .tarjetas--instalaciones .card {
   background-color: #290000;
@@ -697,12 +751,12 @@ main {
 }
 @media (max-width: 768px) {
   main {
-    padding-top: 11rem;
+    padding-top: 17rem;
   }
 }
 @media (max-width: 576px) {
   main {
-    padding-top: 9.5rem;
+    padding-top: 17rem;
   }
 }
 
@@ -716,12 +770,12 @@ html {
 }
 @media (max-width: 768px) {
   html {
-    scroll-padding-top: 11rem;
+    scroll-padding-top: 16rem;
   }
 }
 @media (max-width: 576px) {
   html {
-    scroll-padding-top: 9.5rem;
+    scroll-padding-top: 15rem;
   }
 }
 
