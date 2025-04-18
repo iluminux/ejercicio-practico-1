@@ -1,0 +1,103 @@
+@use '../abstracts/variables' as v;
+
+.header {
+  background-color: v.$color-fondo-oscuro;
+  color: v.$color-texto-inverso;
+  padding: v.$espaciado-md 0 v.$espaciado-sm;
+  text-align: center;
+
+  &__logo {
+    width: 60px;
+    height: auto;
+    margin: 0 auto v.$espaciado-xs;
+    display: block;
+  }
+
+  &__titulo {
+    font-family: v.$font-heading;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.2;
+    color: v.$color-texto-inverso;
+  }
+
+  &__subtitulo {
+    font-size: 0.95rem;
+    margin: v.$espaciado-xs 0 v.$espaciado-md;
+    color: lighten(v.$color-texto-inverso, 10%);
+  }
+
+  .menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    color: v.$color-texto-inverso;
+    border: none;
+    cursor: pointer;
+    margin: v.$espaciado-sm auto;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: v.$espaciado-sm;
+
+    a {
+      color: v.$color-texto-inverso;
+      text-decoration: none;
+      position: relative;
+      font-size: 0.95rem;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -0.2rem;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: v.$color-acento;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      &:hover {
+        color: v.$color-acento;
+
+        &::after {
+          transform: scaleX(1);
+          transform-origin: left;
+        }
+      }
+    }
+
+    &.mobile-hidden {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    &.active {
+      display: flex;
+    }
+  }
+
+  @media (max-width: v.$breakpoint-md) {
+    .menu-toggle {
+      display: block;
+    }
+
+    .nav {
+      display: none;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      &.active {
+        display: flex;
+      }
+    }
+  }
+}

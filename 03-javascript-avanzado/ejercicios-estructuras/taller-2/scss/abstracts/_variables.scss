@@ -1,0 +1,29 @@
+// 🎨 PALETA UMBRELLA
+$color-fondo-oscuro: #290000; // Rojo oscuro Umbrella
+$color-principal: #dc3545; // Rojo Umbrella
+$color-acento: #e50914; // Rojo vibrante para hovers
+$color-rojo-suave: #c94a4a; // Rojo sutil y elegante
+$color-secundario: #198754; // Verde quirófano (Bootstrap success)
+$color-fondo-claro: #f8f9fa;
+$color-texto-inverso: #ffffff;
+$color-texto: #333;
+$color-borde: #ccc; // o cualquier valor que quieras usar como color de borde
+$color-fondo-tarjeta: #1e1e1e; // Gris oscuro sobrio
+
+// 🖋 TIPOGRAFÍAS
+$font-base: 'Segoe UI', Roboto, sans-serif;
+$font-heading: 'Montserrat', sans-serif;
+$font-size-base: 16px;
+
+// 📏 ESPACIADO
+$espaciado-xs: 0.5rem;
+$espaciado-sm: 1rem;
+$espaciado-md: 2rem;
+$espaciado-lg: 4rem;
+$espaciado-xl: 3rem; //
+
+// 📱 BREAKPOINTS
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;

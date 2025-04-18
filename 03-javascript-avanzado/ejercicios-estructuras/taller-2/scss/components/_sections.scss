@@ -1,0 +1,33 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.pagina__intro {
+  text-align: center;
+  padding: 1.5rem 1rem 2rem; // 🔽 Menos espacio vertical arriba
+
+  @media (min-width: 768px) {
+    padding: 2rem 1rem 2.5rem; // 🔽 También reducido para pantallas grandes
+  }
+
+  .pagina__titulo {
+    font-size: 1.5rem; // 🔽 más pequeño
+    color: $color-principal;
+    margin-bottom: 0.5rem;
+
+    @media (min-width: 768px) {
+      font-size: 1.75rem; // 🔽 antes era 2rem
+    }
+  }
+
+  .pagina__descripcion {
+    font-size: 0.9rem; // 🔽 ligeramente más pequeño
+    color: $color-texto;
+    max-width: 90%; // 🔽 ocupa menos horizontalmente
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+      font-size: 0.95rem; // 🔽 antes era 1rem
+      max-width: 720px;
+    }
+  }
+}
