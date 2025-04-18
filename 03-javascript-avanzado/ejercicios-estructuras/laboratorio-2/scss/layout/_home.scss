@@ -1,0 +1,92 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.home__hero {
+  position: relative;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    display: block;
+    border-radius: 0.5rem;
+  }
+
+  // 🧠 Título con estilo compartido entre páginas
+  .home__overlay-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 3rem 1rem 2rem;
+    background: rgba(255, 255, 255, 0.85); // 👈 más transparente
+    backdrop-filter: blur(4px);
+    text-align: center;
+    z-index: 2;
+
+    @media (min-width: $breakpoint-md) {
+      padding: 4rem 1rem 2.5rem;
+    }
+
+    .home__titulo {
+      font-family: $font-heading;
+      font-weight: 700;
+      line-height: 1.2;
+      font-size: 1.5rem;
+      color: $color-acento;
+      margin-bottom: 0.4rem;
+
+      @media (min-width: $breakpoint-md) {
+        font-size: 1.75rem;
+      }
+    }
+
+    .home__subtitulo {
+      font-size: 0.9rem;
+      color: $color-texto;
+
+      @media (min-width: $breakpoint-md) {
+        font-size: 0.95rem;
+      }
+    }
+  }
+
+  // 📦 Caja técnica inferior derecha
+  .home__overlay-text {
+    position: absolute;
+    bottom: $espaciado-sm;
+    right: $espaciado-sm;
+    width: 90%;
+    max-width: 600px;
+    padding: 1.5rem 2rem;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: $color-texto-inverso;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 2;
+    text-align: left;
+  
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      color: $color-acento;
+    }
+  
+    p {
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+      color: $color-texto-inverso; // ✅ AHORA sí se verá bien
+    }
+  
+    strong {
+      color: $color-texto-inverso;
+    }
+  }
+  
+// 🧭 Ajuste por header fijo
+main {
+  padding-top: $altura-header;
+}
+} 

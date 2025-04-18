@@ -1,0 +1,63 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+// ==============================
+// 🗺️ Tarjetas de Mapas del Hospital
+// ==============================
+.tarjetas--mapas {
+  .card {
+    background-color: $color-fondo-oscuro;
+    color: $color-texto-inverso;
+    border: none;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    }
+
+    img {
+      height: 220px;
+      width: 100%;
+      object-fit: cover;
+      background-color: black;
+      display: block;
+    }
+
+    .card-body {
+      padding: $espaciado-sm;
+      text-align: center;
+    }
+
+    .card-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: $color-acento;
+      margin-bottom: 0.5rem;
+
+      @media (min-width: $breakpoint-md) {
+        font-size: 1.1rem;
+      }
+    }
+
+    .card-text {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      color: lighten($color-texto-inverso, 15%);
+
+      @media (min-width: $breakpoint-md) {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+// ==============================
+// 🧱 Espaciado superior para header fijo
+// ==============================
+main {
+  padding-top: $altura-header;
+}
