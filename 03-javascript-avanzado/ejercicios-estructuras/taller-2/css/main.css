@@ -85,21 +85,21 @@ p {
   color: #ffffff;
 }
 .btn--primario:hover {
-  background-color: rgb(189.2151898734, 32.7848101266, 47.7721518987);
+  background-color: #bd2130;
 }
 .btn--secundario {
   background-color: #198754;
   color: #ffffff;
 }
 .btn--secundario:hover {
-  background-color: rgb(17.03125, 91.96875, 57.225);
+  background-color: #115c39;
 }
 .btn--acento {
   background-color: #e50914;
   color: #ffffff;
 }
 .btn--acento:hover {
-  background-color: rgb(179.9285714286, 7.0714285714, 15.7142857143);
+  background-color: #b40710;
 }
 
 .header {
@@ -107,6 +107,13 @@ p {
   color: #ffffff;
   padding: 2rem 0 1rem;
   text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  min-height: 160px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 .header__logo {
   width: 60px;
@@ -124,8 +131,12 @@ p {
 }
 .header__subtitulo {
   font-size: 0.95rem;
-  margin: 0.5rem 0 2rem;
+  margin: 0.5rem auto 2rem;
   color: white;
+  max-width: 90%;
+  display: block;
+  padding: 0 1rem;
+  word-wrap: break-word;
 }
 .header .menu-toggle {
   display: none;
@@ -177,6 +188,9 @@ p {
   display: flex;
 }
 @media (max-width: 768px) {
+  .header {
+    min-height: 200px;
+  }
   .header .menu-toggle {
     display: block;
   }
@@ -295,7 +309,8 @@ p {
 .tarjetas__card img {
   width: 100%;
   height: 220px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
@@ -350,7 +365,7 @@ p {
   transition: background-color 0.3s ease;
 }
 .formulario button:hover {
-  background-color: rgb(179.9285714286, 7.0714285714, 15.7142857143);
+  background-color: #b40710;
 }
 
 .pagina__intro {
@@ -432,7 +447,8 @@ p {
   max-width: 500px;
   width: 90%;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
   text-align: center;
   z-index: 2;
 }
@@ -446,6 +462,10 @@ p {
 .home__hero .home__overlay-text h2 {
   font-size: 1.1rem;
   font-weight: 600;
+}
+
+main {
+  padding-top: 180px;
 }
 
 .contacto__hero {
@@ -531,7 +551,8 @@ p {
   max-width: 600px;
   width: 90%;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
   z-index: 2;
 }
 .contacto__hero .contacto__info-overlay h2,
@@ -566,6 +587,10 @@ p {
   }
 }
 
+main {
+  padding-top: 180px;
+}
+
 .card {
   border: none;
   border-radius: 0.5rem;
@@ -575,7 +600,8 @@ p {
 }
 .card img {
   height: 200px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 .card .card-title {
@@ -590,6 +616,57 @@ p {
   color: white;
 }
 
+main {
+  padding-top: 180px;
+}
+@media (max-width: 768px) {
+  main {
+    padding-top: 160px;
+  }
+}
+
+#resultado-busqueda:empty {
+  display: none;
+}
+
+#resultado-busqueda {
+  transition: all 0.3s ease-in-out;
+  min-height: 0;
+  margin-bottom: 1rem;
+}
+
+#form-busqueda {
+  margin-top: 2rem;
+}
+#form-busqueda .position-relative i.bi-search {
+  position: absolute;
+  top: 50%;
+  left: 1.25rem;
+  transform: translateY(-50%);
+  color: white;
+  pointer-events: none;
+  font-size: 1.1rem;
+  z-index: 2;
+}
+#form-busqueda .position-relative input {
+  padding-left: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px dashed #ccc;
+}
+#form-busqueda input:focus {
+  border-color: #e50914;
+  box-shadow: 0 0 0 0.2rem rgba(229, 9, 20, 0.25);
+}
+@media (max-width: 768px) {
+  #form-busqueda .position-relative i.bi-search {
+    left: 1rem;
+    font-size: 1rem;
+  }
+  #form-busqueda .position-relative input {
+    padding-left: 2.2rem;
+  }
+}
+
 .tarjetas--instalaciones .card {
   background-color: #290000;
   color: #ffffff;
@@ -600,7 +677,8 @@ p {
 }
 .tarjetas--instalaciones .card img {
   height: 220px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 .tarjetas--instalaciones .card .card-body {
@@ -619,6 +697,10 @@ p {
   color: white;
 }
 
+main {
+  padding-top: 180px;
+}
+
 .tarjetas--mapas .card {
   background-color: #290000;
   color: #ffffff;
@@ -635,7 +717,8 @@ p {
 .tarjetas--mapas .card img {
   height: 220px;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   background-color: black;
 }
 .tarjetas--mapas .card .card-body {
@@ -652,6 +735,48 @@ p {
   font-size: 0.9rem;
   line-height: 1.5;
   color: white;
+}
+
+main {
+  padding-top: 180px;
+}
+
+main {
+  padding-top: 14rem;
+}
+@media (max-width: 992px) {
+  main {
+    padding-top: 13rem;
+  }
+}
+@media (max-width: 768px) {
+  main {
+    padding-top: 17rem;
+  }
+}
+@media (max-width: 576px) {
+  main {
+    padding-top: 17rem;
+  }
+}
+
+html {
+  scroll-padding-top: 14rem;
+}
+@media (max-width: 992px) {
+  html {
+    scroll-padding-top: 13rem;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 16rem;
+  }
+}
+@media (max-width: 576px) {
+  html {
+    scroll-padding-top: 15rem;
+  }
 }
 
 .m-0 {
@@ -1058,5 +1183,3 @@ p {
   margin-left: auto !important;
   margin-right: auto !important;
 }
-
-/*# sourceMappingURL=main.css.map */

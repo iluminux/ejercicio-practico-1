@@ -6,12 +6,10 @@
       "savePath": "/css"
     }
   ],
-  "liveSassCompile.settings.excludeList": [
-    "/**/node_modules/**",
-    "/**/bootstrap/**",
-    "/!**/_*.scss"
-  ],
   "liveSassCompile.settings.includeItems": [
     "/scss/main.scss"
+  ],
+  "liveSassCompile.settings.excludeList": [
+    "/**/node_modules/**"
   ]
 }
