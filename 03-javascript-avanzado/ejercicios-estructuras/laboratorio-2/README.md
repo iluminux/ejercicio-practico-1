@@ -1,61 +1,85 @@
-# 🏥 Hospital Raccoon City - Misión M3 L1 (Equipo Médico)
+# 🏥 Hospital Raccoon City - Misión M3 L2
 
-Este proyecto forma parte del Módulo 3 del Bootcamp de Desarrollo Front-End. Representa el desarrollo de la sección **Equipo Médico**, donde se combinan habilidades de maquetación, estilos avanzados con Sass, y funcionalidades con JavaScript para búsquedas dinámicas.
-
-Inspirado en la saga *Resident Evil*, esta misión se enfoca en practicar el diseño responsivo, modularización de SCSS y manipulación del DOM con JavaScript.
-
----
-
-## 👨‍🔬 Tecnologías utilizadas
-
-- HTML5 + SCSS (estructura modular)
-- JavaScript (DOM, funciones, eventos, arrays)
-- Bootstrap 5 (grilla responsive + estilos)
-- Live Sass Compiler
+Este repositorio corresponde al desarrollo del segundo laboratorio virtual del **Módulo 3** del Bootcamp de Desarrollo Front-End.  
+Se ha implementado un sistema de visualización médica para el ficticio *Hospital Raccoon City*, inspirado en el universo de **Resident Evil**.
 
 ---
 
-## ⚙️ Funcionalidades implementadas
+## 📌 Objetivos del laboratorio
 
-### ✔️ Buscador extendido
-Formulario con filtros de especialidad, unidad y experiencia mínima. Los resultados se renderizan dinámicamente desde un arreglo de objetos médicos.
-
-### ✔️ Render dinámico con `filter()` y `forEach()`
-```js
-const resultado = doctores.filter(doc => /* condiciones */);
-resultado.forEach(doc => {
-  // render dinámico
-});
-```
-
-### ✔️ Responsive design
-Uso de clases de Bootstrap (`col-md`, `col-lg`) para adaptar tarjetas al tamaño de pantalla.
+- Aplicar conocimientos de **modularización de código JavaScript**.
+- Utilizar funciones de **orden superior, composición y recursividad**.
+- Manipular el DOM de forma dinámica.
+- Integrar formularios con validación básica.
+- Aplicar filtros combinados para mostrar información.
+- Estructurar componentes reutilizables y escalables.
 
 ---
 
-## 📸 Capturas de pantalla
+## 🧬 Funcionalidades implementadas
 
-### 💻 Vista escritorio
-![Captura escritorio](img/screenshots/screenshot-desktop-equipo.jpeg)
+### 🔎 Página **Equipo Médico**
 
-### 📱 Vista móvil
-![Captura móvil](img/screenshots/screenshot-mobile-equipo.jpeg)
+- **Listado dinámico** de médicos destacados.
+- **Listado completo** del equipo profesional.
+- **Filtros combinados interactivos**:
+  - Especialidad (con select autogenerado)
+  - Experiencia mínima y máxima
+- Datos ficticios con *fachadas clínicas* que alinean el contenido al lore.
+
+### 💬 Página **Contacto**
+
+- Formulario funcional (nombre, correo, mensaje).
+- Validación en cliente y feedback inmediato.
+- Limpieza automática del mensaje tras envío exitoso.
+- Estilización con **Sass** y **Bootstrap** para experiencia profesional.
+
+---
+
+## 🧩 Estructura modular del JavaScript
+
+| Archivo                | Descripción                                                   |
+|------------------------|---------------------------------------------------------------|
+| `HospitalData.js`      | Datos globales del hospital y personal médico.                |
+| `HospitalServicios.js` | Servicios clínicos y precios disponibles.                     |
+| `equipo.js`            | Renderizado dinámico y filtros en la vista de médicos.        |
+| `contacto.js`          | Validación e interacción del formulario de contacto.          |
+| `funciones.js`         | Funciones auxiliares (map, filter, reduce, recursión, etc).   |
+| `script.js`            | Lógica base y validaciones simples en otras páginas.          |
+
+---
+
+## 💅 Estilos personalizados
+
+- SCSS modular con uso de **variables, mixins** y **media queries**.
+- Diseño responsive adaptado a dispositivos.
+- Paleta y ambientación inspiradas en **Umbrella Corp.™** y la saga.
 
 ---
 
 ## ⚠️ Aviso legal
 
-Este proyecto ha sido desarrollado con fines académicos. El contenido está inspirado en la franquicia *Resident Evil* de Capcom. No se persigue ningún fin comercial.
+> Este proyecto ha sido desarrollado con fines **estrictamente académicos**, como parte del Bootcamp de Desarrollo Front-End.  
+> No se persigue lucro alguno ni se infringen derechos de autor.
+
+- Personajes, nombres y ambientación son propiedad de **Capcom®**.
+- El universo de *Resident Evil* es utilizado solo con fines de aprendizaje y creatividad.
 
 ---
 
-🎯 *Misión M3 L1 completada con éxito... y supervisión de Umbrella Corporation®*
+## 🚀 Estado del proyecto
+
+- ✅ Finalizado y probado en entorno local  
+- 🧠 Listo para evaluación técnica  
+- 💡 Recomendado visualizar en pantallas ≥768px
 
 ---
 
-🟢 Entregado como el 1er laboratorio del Módulo 3: Programación avanzada en JavaScript del Bootcamp Desarrollo de Aplicaciones Front-End.
+🎯 *Misión M3 L2 completada con éxito... y supervisión de Umbrella Corporation®*
 
 ---
 
 ## 👩‍💻 Autoría
-Desarrollado por: **Karina Hidalgo**  
+
+**Karina Hidalgo**  
+Bootcamp Desarrollo de Aplicaciones Front-End

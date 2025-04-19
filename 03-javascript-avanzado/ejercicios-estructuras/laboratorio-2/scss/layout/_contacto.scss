@@ -52,7 +52,7 @@
 
   .contacto__formulario-contenedor {
     position: absolute;
-    top: 10rem;
+    top: 13rem;
     left: $espaciado-md;
     width: 420px;
     padding: 2rem;
@@ -161,4 +161,11 @@ main {
 
 #info-funcional:empty {
   display: none;
+}
+
+#info-funcional {
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  border: 1px solid $color-acento;
+  text-align: center;
 }

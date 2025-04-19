@@ -1,7 +1,7 @@
 // ==============================
 // 📦 IMPORTACIÓN DE DATOS
 // ==============================
-import { hospital } from './hospitalData.js';
+import { hospital } from './HospitalData.js';
 
 // ==============================
 // 🌐 CONFIGURACIÓN INICIAL Y EVENTOS
@@ -67,3 +67,16 @@ function mostrarDatosHospital() {
   const { nombre: nombreDoc, especialidad, contacto: { correo } } = primero;
   console.log(`👨‍⚕️ ${nombreDoc} - ${especialidad} (${correo})`);
 }
+
+// ==============================
+// 🧪 PRUEBAS DE FUNCIONES FUNCIONALES
+// ==============================
+import {
+  tiempoPromedioEspera,
+  calcularHorasSemanales,
+  precioFinalConDescuento
+} from './funciones.js';
+
+console.log("🕒 Tiempo promedio de espera:", tiempoPromedioEspera(45, 9), "min");
+console.log("🕓 Total horas semanales de atención:", calcularHorasSemanales(8, 5), "horas");
+console.log("💸 Precio con descuento aplicado:", precioFinalConDescuento(50000), "CLP");

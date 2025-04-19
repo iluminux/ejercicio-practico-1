@@ -1,76 +1,110 @@
 // ==============================
-// 🧬 Mostrar doctores en el DOM
+// 📦 IMPORTACIÓN DE DATOS
 // ==============================
-function mostrarDoctores() {
-    const contenedor = document.querySelector("#lista-doctores");
-    if (!contenedor) return;
-  
-    contenedor.innerHTML = "";
-  
-    hospital.doctores.forEach((doc) => {
-      if (doc.experiencia > 5) {
-        const card = crearCardDoctor(doc, "bg-dark");
-        contenedor.appendChild(card);
-      }
-    });
-  }
-  
-  // ==============================
-  // 🔎 Buscador extendido
-  // ==============================
-  document.addEventListener('DOMContentLoaded', () => {
-    const formBusqueda = document.querySelector("#form-busqueda");
-    const inputEspecialidad = document.querySelector("#input-especialidad");
-    const inputUnidad = document.querySelector("#input-unidad");
-    const inputExperiencia = document.querySelector("#input-experiencia");
-    const resultado = document.querySelector("#resultado-busqueda");
-  
-    if (!formBusqueda || !resultado) return;
-  
-    formBusqueda.addEventListener("submit", (e) => {
-      e.preventDefault();
-      resultado.innerHTML = "";
-  
-      const especialidad = inputEspecialidad.value.trim().toLowerCase();
-      const unidad = inputUnidad.value.trim().toLowerCase();
-      const experienciaMin = parseInt(inputExperiencia.value) || 0;
-  
-      const filtrados = hospital.doctores.filter(doc =>
-        (!especialidad || doc.especialidad.toLowerCase().includes(especialidad)) &&
-        (!unidad || doc.unidad.toLowerCase().includes(unidad)) &&
-        doc.experiencia >= experienciaMin
-      );
-  
-      if (filtrados.length === 0) {
-        resultado.innerHTML = `<p class="text-light text-center">No se encontraron resultados con los criterios ingresados.</p>`;
-      } else {
-        filtrados.forEach(doc => {
-          const card = crearCardDoctor(doc, "bg-secondary");
-          resultado.appendChild(card);
-        });
-      }
-  
-      formBusqueda.reset();
-    });
+import { hospital } from './HospitalData.js';
+import { serviciosMedicos } from './HospitalServicios.js';
+
+// ==============================
+// 🧪 Mostrar médicos
+// ==============================
+function mostrarListaMedicos(lista = hospital.doctores) {
+  const ul = document.getElementById("lista-medicos");
+  if (!ul) return;
+
+  ul.innerHTML = "";
+  lista.forEach((doc) => {
+    const li = document.createElement("li");
+    li.className = "list-group-item bg-dark text-light border-secondary";
+    li.innerHTML = `
+      <strong>${doc.nombre}</strong> - ${doc.especialidad}<br>
+      Contacto: ${doc.contacto.correo} | Horario: ${doc.contacto.horario}
+    `;
+    ul.appendChild(li);
   });
-  
-  // ==============================
-  // 🔧 Utilidad para crear tarjetas
-  // ==============================
-  function crearCardDoctor(doc, bgColor = "bg-dark") {
-    const card = document.createElement("div");
-    card.classList.add("col-md-6", "col-lg-4");
-    card.innerHTML = `
-      <div class="card h-100 ${bgColor} text-light">
+}
+
+// ==============================
+// 🧾 Mostrar servicios
+// ==============================
+function mostrarServicios(lista = serviciosMedicos) {
+  const contenedor = document.getElementById("lista-servicios");
+  if (!contenedor) return;
+
+  contenedor.innerHTML = "";
+  lista.forEach((servicio) => {
+    const div = document.createElement("div");
+    div.className = "col-md-6 col-lg-4";
+    div.innerHTML = `
+      <div class="card h-100 bg-secondary text-light">
         <div class="card-body">
-          <h5 class="card-title">${doc.nombre}</h5>
-          <p class="card-text"><strong>Unidad:</strong> ${doc.unidad}</p>
-          <p class="card-text"><strong>Especialidad:</strong> ${doc.especialidad}</p>
-          <p class="card-text"><strong>Experiencia:</strong> ${doc.experiencia} años</p>
-          <p class="card-text"><strong>Horario:</strong> ${doc.contacto?.horario || "No disponible"}</p>
+          <h5 class="card-title">${servicio.nombre}</h5>
+          <p class="card-text">${servicio.descripcion}</p>
+          <p class="card-text"><strong>Valor:</strong> $${servicio.precio.toLocaleString()}</p>
         </div>
       </div>
     `;
-    return card;
-  }
-  
+    contenedor.appendChild(div);
+  });
+}
+
+// ==============================
+// 🔍 Filtrado de servicios
+// ==============================
+function configurarFiltroServicios() {
+  const form = document.getElementById("form-servicios");
+  const inputNombre = document.getElementById("filtro-nombre");
+  const inputMin = document.getElementById("filtro-min");
+  const inputMax = document.getElementById("filtro-max");
+
+  form?.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const nombre = inputNombre.value.trim().toLowerCase();
+    const min = parseInt(inputMin.value) || 0;
+    const max = parseInt(inputMax.value) || Infinity;
+
+    const filtrados = serviciosMedicos.filter((servicio) =>
+      (!nombre || servicio.nombre.toLowerCase().includes(nombre)) &&
+      servicio.precio >= min &&
+      servicio.precio <= max
+    );
+
+    mostrarServicios(filtrados);
+  });
+}
+
+// ==============================
+// 🔍 Filtrado por especialidad
+// ==============================
+function configurarFiltroEspecialidad() {
+  const select = document.getElementById("filtro-especialidad");
+  if (!select) return;
+
+  // Llenar opciones
+  const especialidades = [...new Set(hospital.doctores.map(d => d.especialidad))];
+  especialidades.forEach(especialidad => {
+    const option = document.createElement("option");
+    option.value = especialidad;
+    option.textContent = especialidad;
+    select.appendChild(option);
+  });
+
+  select.addEventListener("change", () => {
+    const valor = select.value;
+    const filtrados = valor
+      ? hospital.doctores.filter(d => d.especialidad === valor)
+      : hospital.doctores;
+
+    mostrarListaMedicos(filtrados);
+  });
+}
+
+// ==============================
+// 🚀 INICIALIZACIÓN
+// ==============================
+document.addEventListener("DOMContentLoaded", () => {
+  mostrarListaMedicos();
+  mostrarServicios();
+  configurarFiltroServicios();
+  configurarFiltroEspecialidad();
+});
