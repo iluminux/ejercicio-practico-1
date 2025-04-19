@@ -1,0 +1,54 @@
+@use "sass:color";
+
+// ==============================
+// 🎨 PALETA DE COLORES - Umbrella
+// ==============================
+$color-fondo-oscuro: #290000;             // Rojo oscuro Umbrella
+$color-principal: #dc3545;                // Rojo Bootstrap
+$color-acento: #e50914;                   // Rojo vibrante para acentos
+$color-rojo-suave: #c94a4a;               // Rojo elegante
+$color-secundario: #198754;               // Verde quirófano (success)
+$color-fondo-claro: #f8f9fa;              // Fondo Bootstrap
+$color-fondo-tarjeta: #1e1e1e;            // Gris oscuro sobrio
+
+$color-texto: #333;                       // Texto estándar
+$color-texto-inverso: #ffffff;            // Texto sobre fondo oscuro
+$color-borde: #ccc;                       // Bordes suaves
+
+// 🎨 Derivados (más claros)
+$color-icono-lupa: color.adjust($color-texto-inverso, $lightness: 20%);
+$color-texto-suave: color.adjust($color-texto-inverso, $lightness: 20%);
+
+// ==============================
+// 🖋 TIPOGRAFÍA
+// ==============================
+$font-base: 'Segoe UI', Roboto, sans-serif;
+$font-heading: 'Montserrat', sans-serif;
+$font-size-base: 16px;
+
+// ==============================
+// 📏 ESPACIADO GENERAL
+// ==============================
+$espaciado-xs: 0.5rem;
+$espaciado-sm: 1rem;
+$espaciado-md: 2rem;
+$espaciado-lg: 4rem;
+$espaciado-xl: 6rem; // mayor para pantallas grandes
+
+// ==============================
+// 📱 BREAKPOINTS RESPONSIVE
+// ==============================
+$breakpoint-xs: 480px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+// ==============================
+// 📐 DIMENSIONES Y HEADER
+// ==============================
+$header-height-desktop: 14rem; // ≈ 224px
+$header-height-mobile: 16rem;  // ≈ 256px
+
+$altura-header: $header-height-desktop;  // alias semántico para legacy

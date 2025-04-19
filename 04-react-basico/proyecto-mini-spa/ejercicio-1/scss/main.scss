@@ -1,0 +1,32 @@
+// 1. Configuración
+@use 'abstracts/variables' as *;
+@use 'abstracts/mixins' as *;
+
+// 2. Base
+@use 'base/reset';
+@use 'base/typography';
+
+// 3. Componentes
+@use 'components/buttons';
+@use 'components/header';      // ← ya es seguro importar aquí
+@use 'components/footer';
+@use 'components/sections';
+@use 'components/tarjetas';
+@use 'components/formulario';
+@use 'components/intro';
+@use 'components/hero';
+@use 'components/overlay-box';
+
+// 4. Layouts por página
+@use 'layout/home';
+@use 'layout/contacto';
+@use 'layout/equipo';
+@use 'layout/instalaciones';
+@use 'layout/mapas';
+@use 'layout/main';
+
+// 5. Utilidades
+@use 'utilities/utilities';
+
+
+
