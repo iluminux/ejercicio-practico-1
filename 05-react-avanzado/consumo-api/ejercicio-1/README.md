@@ -1,97 +1,49 @@
-# 🏥 Hospital Raccoon City - Módulo 4 Ejercicio Práctico 3
+# 🧪 ABPro 1 - Módulo 5: Consumo de API
 
-Este proyecto es parte del **Ejercicio Práctico 3 del Módulo 4** del Bootcamp de Desarrollo Frontend. Se trata de una **SPA construida con React**, utilizando buenas prácticas de desarrollo, optimización y arquitectura de componentes.
-
----
-
-## 🚀 Tecnologías utilizadas
-
-- React + Vite
-- React Router DOM
-- React Context API
-- React Portals
-- PropTypes
-- Hooks: `useState`, `useEffect`, `useRef`, `useContext`
-- React Profiler
-- Simulación de API (`fakeApi.js`)
+Este proyecto fue desarrollado como parte del **Ejercicio Práctico 1 del Módulo 5** del Bootcamp Front-End. Se trata de una aplicación React que consume una API externa simulando el sistema del Hospital Raccoon City.
 
 ---
 
-## 🧠 Estructura del Proyecto
+## 🛠️ Tecnologías Utilizadas
 
-src/ 
-├── api/ 
-│ └── fakeApi.js 
-├── components/ 
-│ ├── AppointmentForm.jsx 
-│ ├── DoctorCard.jsx 
-│ ├── DoctorModal.jsx 
-│ ├── ServiceList.jsx 
-│ └── withHospitalStyle.jsx 
-├── context/ 
-│ └── DoctorContext.jsx 
-├── views/ 
-│ ├── Home.jsx 
-│ ├── EquipoMedico.jsx 
-│ └── Citas.jsx 
-├── App.jsx 
-└── main.jsx
-
-img/screenshots/ ├
-── screenshot-home.jpeg 
-├── screenshot-equipo.jpeg └
-── screenshot-citas.jpeg
-
-
----
-
-## 🧩 Funcionalidades principales
-
-- SPA con navegación entre secciones
-- Carga de datos desde una “API” simulada
-- Modal dinámico para mostrar detalle de doctores
-- Formulario para agendar citas
-- Validación de props con `PropTypes`
-- Aplicación de `HOC` para reutilizar estilos
-- Análisis con React Profiler
-- Manejo de contexto global para los doctores
+- React
+- Vite
+- Hooks: `useState`, `useEffect`
+- Axios (para llamadas HTTP)
+- Simulación de API: [JSONPlaceholder](https://jsonplaceholder.typicode.com/users)
 
 ---
 
 ## ✅ Requisitos cumplidos
 
-- [x] SPA con `react-router-dom`
-- [x] Fragmentos y DOM Virtual (`<>`, `.map`)
-- [x] `useRef` para enfocar formulario
-- [x] Datos cargados desde `fakeApi.js` (fetch simulado)
-- [x] Validación de Props con `PropTypes`
-- [x] Modal con `ReactDOM.createPortal`
-- [x] Análisis de rendimiento con React Profiler
+- [x] `useEffect` y `useState` para manejar la carga de datos.
+- [x] Uso de **Axios** para llamadas HTTP.
+- [x] Botón de recarga para volver a consultar la API.
+- [x] Manejo de errores visible en la interfaz.
+- [x] Optimización del `useEffect` para que solo se ejecute una vez.
 
 ---
 
-## 📷 Capturas del Proyecto
+## ✨ Justificación técnica
 
-**🏠 Home**  
-![Home](./img/screenshots/screenshot-home.jpeg)
-
-**🧑‍⚕️ Equipo Médico con Modal**  
-![Equipo](./img/screenshots/screenshot-equipo.jpeg)
-
-**📅 Agenda de Citas**  
-![Citas](./img/screenshots/screenshot-citas.jpeg)
+Se utilizó **Axios** porque proporciona una sintaxis más clara y manejable en comparación con `fetch`. Convierte automáticamente la respuesta en JSON, permite interceptores y mejora el control de errores, haciendo el código más limpio y escalable.
 
 ---
 
-## 🛠 ¿Cómo correr el proyecto?
+## 🚀 ¿Cómo ejecutar?
 
-1. Clona este repositorio o descarga el ZIP.
-2. Ubicate en la carpeta `hospital-raccoon`.
-3. Ejecutá los siguientes comandos:
+1. Clona el repositorio o descarga el ZIP.
+2. En la terminal, ubícate en la carpeta `hospital-raccoon`.
+3. Ejecuta los siguientes comandos:
 
 ```bash
 npm install
 npm run dev
+Abre tu navegador en: http://localhost:5173
+
+🖼️ Captura del proyecto
+Vista de doctores obtenida desde la API:📷 Captura del funcionamiento  
+![Screenshot](./img/screenshots/screenshot.jpeg)
 
 👩‍💻 Autoría
-Desarrollado por Karina Hidalgo como parte del Bootcamp Frontend – Módulo 4, ejercicio 3
+Desarrollado por Karina Hidalgo como parte del Ejercicio 1 del Bootcamp Frontend – Módulo 5.
