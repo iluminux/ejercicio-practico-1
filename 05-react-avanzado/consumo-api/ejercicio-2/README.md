@@ -77,19 +77,23 @@ npm run dev
 ## 🖼️ Capturas del proyecto
 
 ### 🧑‍💻 Login
-![Login](./img/screenshots/screenshot-login.JPG)
+![Login](./img/screenshots/screenshot-inicio-test.JPG)
 
-### 📬 Validación de campos
+### 🧠 Validación de campos
 - Nombre obligatorio:  
-  ![Campo Nombre](./img/screenshots/screenshot-login-nombre.JPG)  
+  ![Campo Nombre](./img/screenshots/screenshot-inicio-nombre.JPG)
+
 - Correo obligatorio:  
-  ![Campo Correo](./img/screenshots/screenshot-login-mail.JPG)
+  ![Campo Correo](./img/screenshots/screenshot-inicio-mail.JPG)
 
 ### 🏠 Vista del Home (lista de doctores)
 ![Home](./img/screenshots/screenshot-home.JPG)
 
-### 🔐 Logout
+### 🔒 Logout
 ![Logout](./img/screenshots/screenshot-logout.JPG)
+
+### ✅ Inicio de sesión exitoso
+![Inicio](./img/screenshots/screenshot-inicio-sesion.JPG)
 
 ---
 
