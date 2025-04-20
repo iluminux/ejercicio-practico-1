@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import axios from 'axios';
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 function Doctores() {
   const [doctores, setDoctores] = useState([]);
@@ -10,10 +10,10 @@ function Doctores() {
     setLoading(true);
     setError(null);
     try {
-      const response = await axios.get('https://jsonplaceholder.typicode.com/users');
+      const response = await axios.get("https://jsonplaceholder.typicode.com/users");
       setDoctores(response.data);
     } catch (err) {
-      setError('No se pudo cargar la lista de doctores 😢');
+      setError("No se pudo cargar la lista de doctores 😢");
     } finally {
       setLoading(false);
     }
@@ -21,13 +21,11 @@ function Doctores() {
 
   useEffect(() => {
     obtenerDoctores();
-  }, []); // solo se ejecuta una vez (optimizando useEffect)
+  }, []);
 
   return (
-    <div style={{ padding: '1rem' }}>
-      <h2>👨‍⚕️ Lista de Doctores</h2>
-
-      <button onClick={obtenerDoctores} style={{ marginBottom: '1rem' }}>
+    <div>
+      <button onClick={obtenerDoctores} style={{ marginBottom: "1rem" }}>
         🔄 Recargar
       </button>
 
@@ -35,13 +33,13 @@ function Doctores() {
 
       {error && (
         <div>
-          <p style={{ color: 'red' }}>{error}</p>
+          <p style={{ color: "red" }}>{error}</p>
           <button onClick={obtenerDoctores}>Reintentar</button>
         </div>
       )}
 
       {!loading && !error && (
-        <ul>
+        <ul style={{ listStyle: "none", padding: 0 }}>
           {doctores.map((doc) => (
             <li key={doc.id}>
               {doc.name} - {doc.email}
@@ -54,3 +52,4 @@ function Doctores() {
 }
 
 export default Doctores;
+

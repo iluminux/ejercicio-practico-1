@@ -1,71 +1,97 @@
-# 🧪 ABPro 2 - Módulo 5: Consumo de API con Autenticación
+# 🏥 Hospital Raccoon City - Registro de Pacientes
 
-Este proyecto fue desarrollado como parte del Ejercicio Práctico 2 del Módulo 5 del Bootcamp Frontend.  
-Se trata de una aplicación React que consume una API simulada y utiliza autenticación de usuario mediante contexto.
+Este proyecto consiste en una aplicación de gestión de pacientes que permite:
+- Iniciar sesión con nombre y correo.
+- Visualizar doctores desde una API simulada.
+- Registrar pacientes con validaciones.
+- Ver pacientes cargados.
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## ⚙️ Tecnologías usadas
 
 - React + Vite
-- Hooks (`useState`, `useEffect`, `useContext`)
-- React Router DOM (`v6`)
-- Context API
-- Simulación de API: `JSONPlaceholder`
+- React Router DOM
+- useContext + Hooks personalizados
+- Fetch API + Axios
+- Estilos inline y emojis para mejor UX
 
 ---
 
-## ✅ Requisitos cumplidos
+## 🧠 Habilidades aplicadas
 
-- ✅ Pantalla de login con campos de nombre y correo electrónico.
-- ✅ Al iniciar sesión, se guarda la información en contexto y se navega al home.
-- ✅ Uso de rutas privadas (`RutaPrivada.jsx`) para proteger la vista principal.
-- ✅ Botón de cerrar sesión que limpia el usuario y redirige a `/`.
-- ✅ Consumo de datos desde una API simulada para listar doctores.
-- ✅ Uso correcto de `AuthProvider` y `useContext`.
-- ✅ Vista responsive.
-
----
-
-## 👩‍⚕️ Flujo de funcionamiento
-
-### 1. Inicio con nombre y correo  
-El usuario ingresa su información de inicio:
-
-![Inicio con nombre](.img/screenshots/screenshot-inicio-nombre.JPG)
-![Inicio con mail](.img/screenshots/screenshot-inicio-mail.JPG)  
-![Inicio completo](.img/screenshots/screenshot-inicio-sesion.jpeg)
-
-### 2. Redirección al Home  
-Una vez logueado, se muestra el home del hospital y el saludo personalizado:
-
-![Vista Home](.img/screenshots/screenshot-home.jpeg)
-
-### 3. Cierre de sesión  
-Desde el botón "🔒 Cerrar sesión", el usuario puede salir del sistema:
-
-![Cerrar sesión](.img/screenshots/screenshot-logout.JPG)
+✅ `useState` para manejar formularios  
+✅ `useEffect` para cargar datos desde API  
+✅ Hook personalizado `useFormularioPaciente`  
+✅ Validaciones de campos obligatorios  
+✅ Manejo de errores API y validaciones  
+✅ Ruta protegida (`RutaPrivada.jsx`)  
 
 ---
 
-## 🚀 ¿Cómo ejecutar?
+## 📦 Estructura del proyecto
 
-1. Clona el repositorio o descarga el ZIP.
-2. En la terminal, ubícate en la carpeta `hospital-raccoon`.
-3. Ejecuta los siguientes comandos:
+```
+src/
+├── components/
+│   ├── Doctores.jsx
+│   ├── RegistroPaciente.jsx
+│   ├── RutaPrivada.jsx
+├── context/
+│   └── AuthContext.jsx
+├── hooks/
+│   └── useFormularioPaciente.js
+├── views/
+│   ├── Home.jsx
+│   └── Login.jsx
+├── App.jsx
+├── main.jsx
+```
+
+---
+
+## 📸 Capturas de pantalla
+
+### 🟢 Inicio de sesión
+
+- Campos obligatorios para ingresar:
+
+![Login](./img/screenshots/screenshot-login.JPG)
+![Validación nombre](./img/screenshots/screenshot-login-nombre.JPG)
+![Validación correo](./img/screenshots/screenshot-login-mail.JPG)
+
+---
+
+### 🏠 Vista Home
+
+- Bienvenida + listado de doctores:
+
+![Home](./img/screenshots/screenshot-home.JPG)
+
+---
+
+### 📝 Registro de Pacientes
+
+- Formulario + validación:
+
+![Registro](./img/screenshots/screenshot-registro.JPG)  
+![Validación](./img/screenshots/screenshot-registro-obligatorio.JPG)  
+![Paciente cargado](./img/screenshots/screenshot-registro-cargado.JPG)
+
+---
+
+## 🚀 Cómo correr el proyecto
 
 ```bash
+# Instala las dependencias
 npm install
+
+# Inicia el servidor de desarrollo
 npm run dev
+```
 
-Abre tu navegador en http://localhost:5173
+---
 
-✨ Justificación técnica
-Se usó Context API para manejar la sesión del usuario de forma global.
+## 👩‍💻 Autoría
 
-Se implementó React Router con rutas protegidas para controlar el acceso a Home.
-
-La API se consumió con fetch (o axios, si fuera el caso), haciendo uso de useEffect para cargar los doctores una vez montado el componente.
-
-👩‍💻 Autoría
-Desarrollado por Karina Hidalgo como parte del Ejercicio 2 del Bootcamp Frontend – Módulo 5.
+Desarrollado por Karina Hidalgo como parte del Ejercicio 3 del Módulo 5 del Bootcamp Desarrollo de aplicaciones Frontend.
