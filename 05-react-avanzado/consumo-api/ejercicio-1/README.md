@@ -43,7 +43,7 @@ Abre tu navegador en: http://localhost:5173
 
 🖼️ Captura del proyecto
 Vista de doctores obtenida desde la API:📷 Captura del funcionamiento  
-![Screenshot](./img/screenshots/screenshot.jpeg)
+![Screenshot](./img/screenshots/screenshot.png)
 
 👩‍💻 Autoría
 Desarrollado por Karina Hidalgo como parte del Ejercicio 1 del Bootcamp Frontend – Módulo 5.
