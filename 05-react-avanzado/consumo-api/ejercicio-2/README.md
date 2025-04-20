@@ -77,7 +77,7 @@ npm run dev
 ## 🖼️ Capturas del proyecto
 
 ### 🧑‍💻 Login
-![Login](./img/screenshots/screenshot-inicio-test.JPG)
+![Login](./img/screenshots/screenshot-home.JPG)
 
 ### 🧠 Validación de campos
 - Nombre obligatorio:  
@@ -87,7 +87,7 @@ npm run dev
   ![Campo Correo](./img/screenshots/screenshot-inicio-mail.JPG)
 
 ### 🏠 Vista del Home (lista de doctores)
-![Home](./img/screenshots/screenshot-home.JPG)
+![Home](./img/screenshots/screenshot-inicio-test.JPG)
 
 ### 🔒 Logout
 ![Logout](./img/screenshots/screenshot-logout.JPG)
