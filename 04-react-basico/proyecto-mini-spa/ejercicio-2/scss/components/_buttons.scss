@@ -1,0 +1,41 @@
+@use '../abstracts/variables' as *; 
+@use '../abstracts/mixins' as *;
+@use 'sass:color';
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  @include transition();
+
+  &--primario {
+    background-color: $color-principal;
+    color: $color-texto-inverso;
+  
+    &:hover {
+      background-color: color.adjust($color-principal, $lightness: -10%);
+    }
+  }
+  
+  &--secundario {
+    background-color: $color-secundario;
+    color: $color-texto-inverso;
+
+    &:hover {
+      background-color: color.adjust($color-secundario, $lightness: -10%);
+    }
+  }
+
+  &--acento {
+    background-color: $color-acento;
+    color: $color-texto-inverso;
+
+    &:hover {
+      background-color: color.adjust($color-acento, $lightness: -10%);
+    }
+  }
+}

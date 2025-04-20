@@ -1,0 +1,39 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+// ==============================
+// 🧩 Intro de cada página
+// ==============================
+
+.pagina__intro {
+  text-align: center;
+  padding: 1.5rem 1rem 2rem;
+
+  @media (min-width: $breakpoint-md) {
+    padding: 2rem 1rem 2.5rem;
+  }
+
+  .pagina__titulo {
+    font-family: $font-heading;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+
+    @media (min-width: $breakpoint-md) {
+      font-size: 1.75rem;
+    }
+  }
+
+  .pagina__descripcion {
+    font-size: 0.9rem;
+    color: $color-texto;
+    max-width: 90%;
+    margin: 0 auto;
+
+    @media (min-width: $breakpoint-md) {
+      font-size: 0.95rem;
+      max-width: 720px;
+    }
+  }
+}
