@@ -1,71 +1,98 @@
-# 🧪 ABPro 2 - Módulo 5: Consumo de API con Autenticación
+# 🧪 ABPro 2 - Módulo 5: Rutas protegidas y contexto de autenticación
 
-Este proyecto fue desarrollado como parte del Ejercicio Práctico 2 del Módulo 5 del Bootcamp Frontend.  
-Se trata de una aplicación React que consume una API simulada y utiliza autenticación de usuario mediante contexto.
+Este proyecto es parte del segundo ejercicio del Módulo 5 del Bootcamp Front-End. Simula un sistema médico con login, rutas protegidas y contexto de autenticación usando React.
 
 ---
 
 ## 🛠️ Tecnologías Utilizadas
 
 - React + Vite
-- Hooks (`useState`, `useEffect`, `useContext`)
-- React Router DOM (`v6`)
+- React Router DOM
 - Context API
-- Simulación de API: `JSONPlaceholder`
+- Hooks: useState, useContext, useEffect
+- JSONPlaceholder (API simulada)
 
 ---
 
 ## ✅ Requisitos cumplidos
 
-- ✅ Pantalla de login con campos de nombre y correo electrónico.
-- ✅ Al iniciar sesión, se guarda la información en contexto y se navega al home.
-- ✅ Uso de rutas privadas (`RutaPrivada.jsx`) para proteger la vista principal.
-- ✅ Botón de cerrar sesión que limpia el usuario y redirige a `/`.
-- ✅ Consumo de datos desde una API simulada para listar doctores.
-- ✅ Uso correcto de `AuthProvider` y `useContext`.
-- ✅ Vista responsive.
+- [x] Formulario de login simple (nombre y correo).
+- [x] Contexto de autenticación (`AuthContext`) para guardar usuario.
+- [x] Rutas protegidas (`RutaPrivada`) que redirigen si no estás logueado.
+- [x] Página de bienvenida personalizada.
+- [x] Botón de cerrar sesión.
+- [x] Petición HTTP para obtener doctores desde una API.
+- [x] Manejo de errores al cargar datos.
+- [x] Botón para recargar datos.
+- [x] Estilos mínimos y emojis para mejor experiencia.
+- [x] Capturas del funcionamiento.
 
 ---
 
-## 👩‍⚕️ Flujo de funcionamiento
+## ✨ Justificación técnica
 
-### 1. Inicio con nombre y correo  
-El usuario ingresa su información de inicio:
+- Se usa **Context API** para mantener el estado global del usuario.
+- La **ruta protegida** asegura que solo usuarios logueados accedan a `/home` y otras páginas.
+- `useEffect` permite hacer la llamada a la API al montar el componente.
+- `useNavigate` facilita la redirección en React Router.
+- La validación simple de inputs asegura una experiencia de login básica sin backend.
 
-![Inicio con nombre](.img/screenshots/screenshot-inicio-nombre.JPG)
-![Inicio con mail](.img/screenshots/screenshot-inicio-mail.JPG)  
-![Inicio completo](.img/screenshots/screenshot-inicio-sesion.jpeg)
+---
 
-### 2. Redirección al Home  
-Una vez logueado, se muestra el home del hospital y el saludo personalizado:
+## 📁 Estructura del Proyecto
 
-![Vista Home](.img/screenshots/screenshot-home.jpeg)
-
-### 3. Cierre de sesión  
-Desde el botón "🔒 Cerrar sesión", el usuario puede salir del sistema:
-
-![Cerrar sesión](.img/screenshots/screenshot-logout.JPG)
+```
+src/
+├── components/
+│   ├── Doctores.jsx
+│   ├── ProtectedRoute.jsx
+│   └── RutaPrivada.jsx
+├── context/
+│   └── AuthContext.jsx
+├── views/
+│   ├── Home.jsx
+│   └── Login.jsx
+├── App.jsx
+├── main.jsx
+└── App.css
+```
 
 ---
 
 ## 🚀 ¿Cómo ejecutar?
 
 1. Clona el repositorio o descarga el ZIP.
-2. En la terminal, ubícate en la carpeta `hospital-raccoon`.
+2. Abre la terminal y navega a la carpeta `hospital-raccoon`.
 3. Ejecuta los siguientes comandos:
 
 ```bash
 npm install
 npm run dev
+```
 
-Abre tu navegador en http://localhost:5173
+4. Abre tu navegador en: [http://localhost:5173](http://localhost:5173)
 
-✨ Justificación técnica
-Se usó Context API para manejar la sesión del usuario de forma global.
+---
 
-Se implementó React Router con rutas protegidas para controlar el acceso a Home.
+## 🖼️ Capturas del proyecto
 
-La API se consumió con fetch (o axios, si fuera el caso), haciendo uso de useEffect para cargar los doctores una vez montado el componente.
+### 🧑‍💻 Login
+![Login](./img/screenshots/screenshot-login.JPG)
 
-👩‍💻 Autoría
-Desarrollado por Karina Hidalgo como parte del Ejercicio 2 del Bootcamp Frontend – Módulo 5.
+### 📬 Validación de campos
+- Nombre obligatorio:  
+  ![Campo Nombre](./img/screenshots/screenshot-login-nombre.JPG)  
+- Correo obligatorio:  
+  ![Campo Correo](./img/screenshots/screenshot-login-mail.JPG)
+
+### 🏠 Vista del Home (lista de doctores)
+![Home](./img/screenshots/screenshot-home.JPG)
+
+### 🔐 Logout
+![Logout](./img/screenshots/screenshot-logout.JPG)
+
+---
+
+## 👩‍💻 Autoría
+
+Desarrollado por **Karina Hidalgo** como parte del **Ejercicio 2** del Módulo 5 – Bootcamp Frontend.
