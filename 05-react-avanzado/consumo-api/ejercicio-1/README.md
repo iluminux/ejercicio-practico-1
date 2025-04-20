@@ -24,26 +24,62 @@ Este proyecto fue desarrollado como parte del **Ejercicio Práctico 1 del Módul
 
 ---
 
-## ✨ Justificación técnica
+## ⚙️ Estructura del proyecto
 
-Se utilizó **Axios** porque proporciona una sintaxis más clara y manejable en comparación con `fetch`. Convierte automáticamente la respuesta en JSON, permite interceptores y mejora el control de errores, haciendo el código más limpio y escalable.
+```
+hospital-raccoon/
+├── public/
+├── src/
+│   ├── api/
+│   ├── assets/
+│   ├── components/
+│   │   ├── AppointmentForm.jsx
+│   │   ├── DoctorCard.jsx
+│   │   ├── Doctores.jsx
+│   │   ├── DoctorModal.jsx
+│   │   ├── ServiceList.jsx
+│   │   └── withHospitalStyle.jsx
+│   ├── context/
+│   │   └── DoctorContext.jsx
+│   ├── views/
+│   │   ├── Citas.jsx
+│   │   ├── EquipoMedico.jsx
+│   │   └── Home.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── img/
+│   └── screenshots/
+│       └── screenshot.png
+├── package.json
+└── README.md
+```
 
 ---
 
 ## 🚀 ¿Cómo ejecutar?
 
 1. Clona el repositorio o descarga el ZIP.
-2. En la terminal, ubícate en la carpeta `hospital-raccoon`.
+2. Abre una terminal y ubícate en la carpeta `hospital-raccoon`.
 3. Ejecuta los siguientes comandos:
 
 ```bash
 npm install
 npm run dev
-Abre tu navegador en: http://localhost:5173
+```
 
-🖼️ Captura del proyecto
-Vista de doctores obtenida desde la API:📷 Captura del funcionamiento  
-![Screenshot](./img/screenshots/screenshot.png)
+4. Abre tu navegador en: [http://localhost:5173](http://localhost:5173)
 
-👩‍💻 Autoría
-Desarrollado por Karina Hidalgo como parte del Ejercicio 1 del Bootcamp Frontend – Módulo 5.
+---
+
+## 🖼️ Captura del proyecto
+
+Vista de doctores obtenida desde la API:
+
+![Screenshot](./img/screenshots/screenshot.jpeg)
+
+---
+
+## 👩‍💻 Autoría
+
+Desarrollado por **Karina Hidalgo** como parte del *Ejercicio 1 del Módulo 5 - Bootcamp Frontend*.

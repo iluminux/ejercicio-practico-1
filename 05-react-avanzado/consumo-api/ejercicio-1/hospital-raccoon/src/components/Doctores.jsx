@@ -21,7 +21,7 @@ function Doctores() {
 
   useEffect(() => {
     obtenerDoctores();
-  }, []); // solo se ejecuta una vez (optimizando useEffect)
+  }, []);
 
   return (
     <div style={{ padding: '1rem' }}>
@@ -41,9 +41,9 @@ function Doctores() {
       )}
 
       {!loading && !error && (
-        <ul>
+        <ul style={{ listStyleType: 'none', padding: 0 }}>
           {doctores.map((doc) => (
-            <li key={doc.id}>
+            <li key={doc.id} style={{ marginBottom: '0.5rem' }}>
               {doc.name} - {doc.email}
             </li>
           ))}
