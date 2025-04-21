@@ -1,12 +1,38 @@
-# React + Vite
+# 🏥 Hospital Raccoon - Ejercicio 4
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto fue desarrollado como parte del módulo de consumo de API con React en el Bootcamp de Desarrollo Frontend.
 
-Currently, two official plugins are available:
+## 🚀 ¿Qué incluye?
+- React + TypeScript + Vite
+- Rutas protegidas
+- Formularios controlados
+- Manejo de contexto para autenticación
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📦 Instalación
 
-## Expanding the ESLint configuration
+1. Clona el repositorio o descomprime este proyecto.
+2. Ejecuta el siguiente comando para instalar las dependencias:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+```
+
+3. Inicia el entorno de desarrollo:
+
+```bash
+npm run dev
+```
+
+4. Abre tu navegador en [http://localhost:5173](http://localhost:5173)
+
+## 🧪 Comandos útiles
+
+```bash
+npm run dev      # Levanta el servidor de desarrollo
+npm run build    # Construye el proyecto para producción
+npm run preview  # Previsualiza la versión de producción
+```
+
+## 🧑‍💻 Autora
+
+Desarrollado por Karina Hidalgo, entrega ejercicio práctico n°4 módulo 5 - Bootcamp Front-End.
